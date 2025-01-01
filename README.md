@@ -9,11 +9,11 @@ Driven by a quest to navigate the data analyst job market more effectively, this
 
 ### The questions I wanted to answer through my SQL queries were:
 
-1. What are the top-paying data analyst jobs?
-2. What skills are required for these top-paying jobs?
-3. What skills are most in demand for data analysts?
-4. Which skills are associated with higher salaries?
-5. What are the most optimal skills to learn?
+1. Which industry raised the most funds?
+2. Which company raised the most funds?
+3. Is there a correlation between the leading company and industry for funds raised?
+4. Did this company have significantly higher or lower amount of layoffs?
+5. What are the top five companies with most layoffs per year?
 
 # Tools I Used
 For my deep dive into the data analyst job market, I harnessed the power of several key tools:
