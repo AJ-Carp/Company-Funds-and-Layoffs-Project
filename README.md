@@ -22,28 +22,33 @@ As job hunting becomes increasingly difficult, I began to wonder if I could use 
 # The Analysis
 Each query for this project aimed at investigating specific aspects of the data analyst job market. Here’s how I approached each question:
 
-### 1. Top Paying Data Analyst Jobs
-To identify the highest-paying roles, I filtered data analyst positions by average yearly salary and location, focusing on remote jobs. This query highlights the high paying opportunities in the field.
+### 1. Which industry raised the most funds?
+A much simpler query could be written to answer this question but I wanted to gain some additional insight to help me make correlations later on.
 
 ```sql
-SELECT	
-	job_id,
-	job_title,
-	job_location,
-	job_schedule_type,
-	salary_year_avg,
-	job_posted_date,
-    name AS company_name
-FROM
-    job_postings_fact
-LEFT JOIN company_dim ON job_postings_fact.company_id = company_dim.company_id
-WHERE
-    job_title_short = 'Data Analyst' AND 
-    job_location = 'Anywhere' AND 
-    salary_year_avg IS NOT NULL
-ORDER BY
-    salary_year_avg DESC
-LIMIT 10;
+WITH top_5_per_year AS 
+(
+	WITH sum_for_industry_year AS (
+		SELECT YEAR(date) AS year, Industry, ROUND(SUM(funds_raised_millions),0) AS sum_funds
+		FROM layoffs_staging 
+		WHERE funds_raised_millions IS NOT NULL AND YEAR(date) IS NOT NULL AND Industry IS NOT NULL
+		GROUP BY YEAR(date), Industry
+	)
+	SELECT *, ROW_NUMBER() OVER(PARTITION BY year ORDER BY sum_funds DESC) AS row_num
+	FROM (
+		SELECT sum_for_industry_year.*, sum_funds_for_year, sum_funds/sum_funds_for_year*100 AS `sum_funds_%_of_total_for_year`, SUM(sum_funds) OVER() AS all_total, (sum_funds/SUM(sum_funds) OVER())*100 AS `sum_funds_%_of_all_years_total`
+		FROM sum_for_industry_year 
+		JOIN
+			(SELECT YEAR(date) AS year, ROUND(SUM(funds_raised_millions),0) AS sum_funds_for_year
+			FROM layoffs_staging
+			WHERE funds_raised_millions IS NOT NULL AND YEAR(date) IS NOT NULL AND Industry IS NOT NULL 
+			GROUP BY YEAR(date)) AS sub
+		ON sub.year = sum_for_industry_year.year) AS sub2
+	ORDER BY year DESC, sum_funds DESC
+)
+SELECT *
+FROM top_5_per_year
+WHERE row_num <= 5;
 ```
 Here's the breakdown of the top data analyst jobs in 2023:
 - **Wide Salary Range:** Top 10 paying data analyst roles span from $184,000 to $650,000, indicating significant salary potential in the field.
