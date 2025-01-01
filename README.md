@@ -54,6 +54,7 @@ FROM top_5_per_year
 WHERE row_num <= 5;
 ```
 Output of query formated in excel:
+
 <img width="612" alt="Picture1" src="https://github.com/user-attachments/assets/edae6802-b48d-4733-b113-40aa1241f03c" />
 
 Here's the breakdown of the top data analyst jobs in 2023:
