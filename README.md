@@ -14,7 +14,8 @@ As job hunting becomes increasingly difficult, I began to wonder if I could use 
 
 # Tools I Used
 
-- **MySQL:** 
+- **MySQL:**
+- **Excel:**
 - **Tableau:**
 - **Visual Studio Code:** 
 - **Git & GitHub:** 
