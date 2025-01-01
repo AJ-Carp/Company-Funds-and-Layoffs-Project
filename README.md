@@ -58,9 +58,11 @@ Output of query formated in excel:
 <img width="612" alt="Picture1" src="https://github.com/user-attachments/assets/edae6802-b48d-4733-b113-40aa1241f03c" />
 
 Here's the breakdown:
-- **Wide Salary Range:** Top 10 paying data analyst roles span from $184,000 to $650,000, indicating significant salary potential in the field.
-- **Diverse Employers:** Companies like SmartAsset, Meta, and AT&T are among those offering high salaries, showing a broad interest across different industries.
-- **Job Title Variety:** There's a high diversity in job titles, from Data Analyst to Director of Analytics, reflecting varied roles and specializations within data analytics.
+- **Funds per Industry & Year:** For each year the top 5 industry leading in funds are shown.
+- **Funds per Year:** In sum_funds_for_year column we see the sum of funds for all undustries broken up by year.
+- **Job Title Variety:** The %_of_year_total column shows what percent of funds each industry makes up for a paticular year.
+- **gergdbsd:** Finally, the all_years_total shows the total sum of funds for years and industries. Then in the last column we see that media in 2022 alone makes up 31% of the whole total, clearly indicating that media is our winner.
+  
 
 ### 2. Skills for Top Paying Jobs
 To understand what skills are required for the top-paying jobs, I joined the job postings with the skills data, providing insights into what employers value for high-compensation roles.
