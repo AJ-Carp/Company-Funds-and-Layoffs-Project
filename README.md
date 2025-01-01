@@ -55,7 +55,8 @@ WHERE row_num <= 5;
 ```
 Output of query formated in excel:
 
-<img width="612" alt="Picture1" src="https://github.com/user-attachments/assets/edae6802-b48d-4733-b113-40aa1241f03c" />
+<img width="1052" alt="Screenshot 2025-01-01 at 12 29 43 PM" src="https://github.com/user-attachments/assets/193f9efd-85a2-4d1e-990e-821f7671c329" />
+
 
 Here's the breakdown:
 - **Funds per Industry & Year:** In our first 2 columns, the top 5 industries leading in funds for each year are shown.
