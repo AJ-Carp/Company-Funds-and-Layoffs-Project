@@ -20,7 +20,7 @@ As job hunting becomes increasingly difficult, I began to wonder if I could use 
 - **Git & GitHub:** 
 
 # The Analysis
-Each query for this project aimed at investigating specific aspects of the data analyst job market. Here’s how I approached each question:
+Each query for this project aimed at investigating specific aspects of why and where the layoffs were occuring. Here’s how I approached each question:
 
 ### 1. Which industry raised the most funds?
 A much simpler query could be written to answer this question but I wanted to gain some additional insight to help me make correlations later on.
