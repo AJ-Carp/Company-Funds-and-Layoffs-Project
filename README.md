@@ -11,7 +11,7 @@ As job hunting becomes increasingly difficult, I began to wonder if I could use 
 1. Which industry raised the most funds?
 2. Which company raised the most funds?
 3. Is there a correlation between the leading company and industry for funds raised?
-4. Did this company have significantly higher or lower amount of layoffs?
+4. Did this leading company have significantly higher or lower amount of layoffs?
 5. What are the top five companies with most layoffs per year?
 
 # Tools I Used
