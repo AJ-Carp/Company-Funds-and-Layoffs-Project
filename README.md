@@ -59,9 +59,9 @@ Output of query formated in excel:
 
 Here's the breakdown:
 - **Funds per Industry & Year:** In our first 2 columns, the top 5 industries leading in funds for each year are shown.
-- **Funds per Year:** In sum_funds_for_year column we see the sum of funds for all undustries broken up by year.
-- **Job Title Variety:** The %_of_year_total column shows what percent of funds each industry makes up for a paticular year.
-- **gergdbsd:** Finally, the all_years_total shows the total sum of funds for years and industries. Then in the last column we see that media in 2022 alone makes up 31% of the whole total, clearly indicating that media is our winner.
+- **Funds per Year:** In the 3rd column the sum of funds for each undustry per year is shown. Then in the 4th column the sum of funds for the whole year is shown.
+- **Job Title Variety:** The 5th column shows what percent of funds each industry makes up for each year.
+- **gergdbsd:** Finally, the 6th column shows the total sum of all funds for everything. Then in the last column we see that media in 2022 alone makes up 31% of the whole total, clearly indicating that media is our winner.
   
 
 ### 2. Skills for Top Paying Jobs
