@@ -1,7 +1,7 @@
-# Introduction   (modify)
+# Introduction
 As job hunting becomes increasingly difficult, I began to wonder if I could use data to help improve my chances, ultimately leading to this project. By analyzing historical layoff data, I aim to identify key factors leading to workforce reductions and help candidates make informed decisions.
 
-🔍 SQL queries? Check them out here: [Project_queries](https://github.com/AJ-Carp/Data-Science-Job-Analysis-Project/tree/main/Project_queries)
+🔍 SQL queries? Check them out here: [Project_queries](https://github.com/AJ-Carp/Data-Science-Job-Analysis-Project/tree/main/Project_queries) (change this link)
 
 # Background
 Driven by a quest to navigate the data analyst job market more effectively, this project was born from a desire to pinpoint top-paid and in-demand skills, streamlining others work to find optimal jobs.
