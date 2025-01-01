@@ -39,7 +39,7 @@ WITH top_5_per_year AS
 	)
 	SELECT *, ROW_NUMBER() OVER(PARTITION BY year ORDER BY sum_funds DESC) AS row_num
 	FROM (
-		SELECT sum_for_industry_year.*, sum_funds_for_year, sum_funds/sum_funds_for_year*100 AS `sum_funds_%_of_total_for_year`, SUM(sum_funds) OVER() AS all_total, (sum_funds/SUM(sum_funds) OVER())*100 AS `sum_funds_%_of_all_years_total`
+		SELECT sum_for_industry_year.*, sum_funds_for_year, sum_funds/sum_funds_for_year*100 AS `sum_funds_%_of_total_for_year`, SUM(sum_funds) OVER() AS all_total,(sum_funds/SUM(sum_funds) OVER())*100 AS `sum_funds_%_of_all_years_total`
 		FROM sum_for_industry_year 
 		JOIN
 			(SELECT YEAR(date) AS year, ROUND(SUM(funds_raised_millions),0) AS sum_funds_for_year
