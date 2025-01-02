@@ -119,7 +119,7 @@ Output of query formated in Excel:
 <img width="1264" alt="Screenshot 2025-01-02 at 10 34 04 AM" src="https://github.com/user-attachments/assets/9f0ac649-1c05-4281-915d-9486e7a7d833" />
 
 Here's the breakdown:
-- This query shows all data for the media industry ordered descending by the funds raised.
+- This query shows all data for the media industry ordered descending by the funds_raised_millions.
 - Highlighted in green we see Netflix under company, SF Bay Area under location, media under industry, 2022 under date and very high funds under funds_raised_millions.
 
 
