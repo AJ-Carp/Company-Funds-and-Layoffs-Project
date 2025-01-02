@@ -65,35 +65,12 @@ Here's the breakdown:
 - **gergdbsd:** Finally, the 6th column shows the total sum of all funds for everything. Then in the last column we see that media in 2022 alone makes up 31% of the whole total, clearly indicating that media is our winner.
   
 
-### 2. Skills for Top Paying Jobs
-To understand what skills are required for the top-paying jobs, I joined the job postings with the skills data, providing insights into what employers value for high-compensation roles.
+### 2. Which company raised the most funds?
 ```sql
-WITH top_paying_jobs AS (
-    SELECT	
-        job_id,
-        job_title,
-        salary_year_avg,
-        name AS company_name
-    FROM
-        job_postings_fact
-    LEFT JOIN company_dim ON job_postings_fact.company_id = company_dim.company_id
-    WHERE
-        job_title_short = 'Data Analyst' AND 
-        job_location = 'Anywhere' AND 
-        salary_year_avg IS NOT NULL
-    ORDER BY
-        salary_year_avg DESC
-    LIMIT 10
-)
-
-SELECT 
-    top_paying_jobs.*,
-    skills
-FROM top_paying_jobs
-INNER JOIN skills_job_dim ON top_paying_jobs.job_id = skills_job_dim.job_id
-INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
-ORDER BY
-    salary_year_avg DESC;
+SELECT company, SUM(funds_raised_millions) AS sum_of_funds
+FROM layoffs_staging
+GROUP BY company 
+ORDER BY 2 DESC;
 ```
 Here's the breakdown of the most demanded skills for the top 10 highest paying data analyst jobs in 2023:
 - **SQL** is leading with a bold count of 8.
