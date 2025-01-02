@@ -82,7 +82,8 @@ Here's the breakdown:
 - The companies are grouped together, showing the sum of all funds for each company
 - The legend on the right tells us the industry each company is part of.
 - Netflix takes the lead with more then 3 times the funds the runner up had!
-- Unsurprisingly, Netflix is considered part of the media industry, I must investigate futher. 
+- Unsurprisingly, Netflix is considered part of the media industry.
+- I must investigate futher!
 
 
 ### 3. In-Demand Skills for Data Analysts
