@@ -98,8 +98,13 @@ GROUP BY location
 ORDER BY 2 DESC
 LIMIT 10;
 ```
+Output of query formated in Excel:
 
 <img width="181" alt="Screenshot 2025-01-02 at 10 26 34 AM" src="https://github.com/user-attachments/assets/7f0201be-96bc-4246-bd33-3186a183932c" />
+
+Here's the breakdown of the most demanded skills for data analysts in 2023
+- **SQL** and **Excel** remain fundamental, emphasizing the need for strong foundational skills in data processing and spreadsheet manipulation.
+- **Programming** and **Visualization Tools** like **Python**, **Tableau**, and **Power BI** are essential, pointing towards the increasing importance of technical skills in data storytelling and decision support.
 
 ```sql
 -- most funds raised in media
@@ -108,6 +113,7 @@ FROM layoffs_staging
 WHERE industry = 'media'
 ORDER BY funds_raised_millions DESC;
 ```
+Output of query formated in Excel:
 
 <img width="1279" alt="Screenshot 2025-01-02 at 10 09 09 AM" src="https://github.com/user-attachments/assets/188e630d-9567-4503-adab-882753b0595d" />
 
