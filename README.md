@@ -86,9 +86,8 @@ Here's the breakdown:
 - I must investigate futher!
 
 
-### 3. In-Demand Skills for Data Analysts
+### 3. Is there a correlation between the leading company and industry for funds raised?
 
-This query helped identify the skills most frequently requested in job postings, directing focus to areas with high demand.
 
 ```sql
 SELECT 
