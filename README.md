@@ -91,7 +91,7 @@ Here's the breakdown:
 
 ```sql
 -- location where most of media in 2022 made funds
-SELECT location, SUM(funds_raised_millions)
+SELECT location, SUM(funds_raised_millions) AS sum_of_funds
 FROM layoffs_staging
 WHERE industry = 'media' AND YEAR(date) = 2022
 GROUP BY location
@@ -102,9 +102,9 @@ Output of query formated in Excel:
 
 <img width="181" alt="Screenshot 2025-01-02 at 10 26 34 AM" src="https://github.com/user-attachments/assets/7f0201be-96bc-4246-bd33-3186a183932c" />
 
-Here's the breakdown of the most demanded skills for data analysts in 2023
-- **SQL** and **Excel** remain fundamental, emphasizing the need for strong foundational skills in data processing and spreadsheet manipulation.
-- **Programming** and **Visualization Tools** like **Python**, **Tableau**, and **Power BI** are essential, pointing towards the increasing importance of technical skills in data storytelling and decision support.
+Here's the breakdown:
+- This qeury returns the locations where most of the funds were raised by the media industry in 2022.
+- It is ordered descending by sum_of_funds and so we can cleary see the San Fransisco Bay area raised the most.
 
 ```sql
 -- most funds raised in media
