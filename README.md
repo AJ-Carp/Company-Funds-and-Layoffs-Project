@@ -1,5 +1,5 @@
 # Introduction
-As job hunting becomes increasingly difficult, I began to wonder if I could use data to help improve my chances, ultimately leading to this project. By analyzing historical layoff data, I aim to identify key factors leading to workforce reductions and help candidates make informed decisions.
+As job hunting grows more challenging, I started to consider whether data analysis could enhance my chances of securing a position by examining historical layoff data. Through this project, I aim to uncover key factors contributing to workforce reductions, as well as identify companies and industries that might offer better opportunities.
 
 🚿 Data Cleaning? Check it out here: [Project_queries](https://github.com/AJ-Carp/Data-Science-Job-Analysis-Project/tree/main/Project_queries) (change this link)
 
