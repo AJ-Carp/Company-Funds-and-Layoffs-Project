@@ -105,7 +105,7 @@ Here's the breakdown:
 - This qeury returns the locations where most of the funds were raised by the media industry in 2022.
 - It is ordered descending by sum_of_funds and so we can cleary see the San Fransisco Bay area raised the most.
 
-This additional query connects everything together regarding the correlation between netlfix and the media industries high funds in 2022.
+This additional query connects everything together regarding the correlation between Netlfix and the media industries high funds in 2022.
 ```sql
 -- most funds raised in media
 SELECT *
