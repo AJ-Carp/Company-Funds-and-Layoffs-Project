@@ -95,7 +95,9 @@ SELECT location, SUM(funds_raised_millions)
 FROM layoffs_staging
 WHERE industry = 'media' AND YEAR(date) = 2022
 GROUP BY location
-ORDER BY 2 DESC;
+ORDER BY 2 DESC
+LIMIT 10;
+
 
 -- most funds raised in media
 SELECT *
