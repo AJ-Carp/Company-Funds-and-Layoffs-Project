@@ -79,7 +79,7 @@ Output of query formated in excel:
 
 
 Here's the breakdown:
-- **SQL** is leading with a bold count of 8.
+- Netflix takes the lead with more then 3 times the funds the runner up had.
 - **Python** follows closely with a bold count of 7.
 - **Tableau** is also highly sought after, with a bold count of 6.
 Other skills like **R**, **Snowflake**, **Pandas**, and **Excel** show varying degrees of demand.
