@@ -61,7 +61,7 @@ Here's the breakdown:
 - In our first 2 columns, the top 5 industries leading in funds for each year are shown.
 - In the 3rd column the sum of funds for each undustry per year is shown. Then in the 4th column the sum of funds for the whole year is shown.
 - The 5th column shows what percent of funds each industry makes up for each year.
-- Finally, the 6th column shows the total sum of all funds for everything. Then in the last column we see that media in 2022 alone makes up 31% of the whole total, clearly indicating that media is our winner.
+- Finally, the 6th column shows the total sum of all funds for all 4 years. Then in the last column we see that media in 2022 alone makes up 31% of the whole total, clearly indicating that media is our winner.
   
 
 ### 2. Which company raised the most funds? 
