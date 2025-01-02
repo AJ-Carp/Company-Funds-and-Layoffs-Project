@@ -13,6 +13,7 @@ As job hunting grows more challenging, I started to consider whether data analys
 3. Is there a correlation between the leading company and industry for funds raised?
 4. Did this leading company have significantly higher or lower amount of layoffs then other companies?
 5. 
+6.
 
 # Tools I Used
 
