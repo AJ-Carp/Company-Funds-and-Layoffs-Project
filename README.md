@@ -65,7 +65,7 @@ Here's the breakdown:
 - Finally, the 6th column shows the total sum of all funds for everything. Then in the last column we see that media in 2022 alone makes up 31% of the whole total, clearly indicating that media is our winner.
   
 
-### 2. Which company raised the most funds? #
+### 2. Which company raised the most funds? 
 ```sql
 SELECT company, SUM(funds_raised_millions) AS sum_of_funds
 FROM layoffs_staging
@@ -106,6 +106,7 @@ Here's the breakdown:
 - This qeury returns the locations where most of the funds were raised by the media industry in 2022.
 - It is ordered descending by sum_of_funds and so we can cleary see the San Fransisco Bay area raised the most.
 
+This additional query connects everything together regarding the correlation between netlfix and media industries high funds in 2022.
 ```sql
 -- most funds raised in media
 SELECT *
