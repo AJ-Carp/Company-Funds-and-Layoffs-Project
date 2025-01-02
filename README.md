@@ -22,7 +22,6 @@ As job hunting grows more challenging, I started to consider whether data analys
 - **Git & GitHub:** 
 
 # The Analysis
-Each query for this project aimed at investigating specific aspects of why and where the layoffs were occuring. Here’s how I approached each question:
 
 ### 1. Which industry raised the most funds?
 A much simpler query could be written to answer this question but I wanted to gain some additional insight to help me make correlations later on.
