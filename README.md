@@ -79,9 +79,9 @@ Output of query formated in excel:
 
 
 Here's the breakdown:
-- Netflix takes the lead with more then 3 times the funds the runner up had.
-- **Python** follows closely with a bold count of 7.
-- **Tableau** is also highly sought after, with a bold count of 6.
+- The companies are grouped together, showing the sum of all funds for each company
+- 
+- Netflix takes the lead with more then 3 times the funds the runner up had!
 Other skills like **R**, **Snowflake**, **Pandas**, and **Excel** show varying degrees of demand.
 
 
