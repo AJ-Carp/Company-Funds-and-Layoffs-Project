@@ -70,7 +70,8 @@ Here's the breakdown:
 SELECT company, SUM(funds_raised_millions) AS sum_of_funds
 FROM layoffs_staging
 GROUP BY company 
-ORDER BY 2 DESC;
+ORDER BY 2 DESC
+LIMIT 10;
 ```
 Here's the breakdown of the most demanded skills for the top 10 highest paying data analyst jobs in 2023:
 - **SQL** is leading with a bold count of 8.
