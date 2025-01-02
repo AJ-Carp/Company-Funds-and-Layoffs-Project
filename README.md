@@ -97,16 +97,17 @@ WHERE industry = 'media' AND YEAR(date) = 2022
 GROUP BY location
 ORDER BY 2 DESC
 LIMIT 10;
+```
 
+<img width="181" alt="Screenshot 2025-01-02 at 10 26 34 AM" src="https://github.com/user-attachments/assets/7f0201be-96bc-4246-bd33-3186a183932c" />
 
+```sql
 -- most funds raised in media
 SELECT *
 FROM layoffs_staging
 WHERE industry = 'media'
 ORDER BY funds_raised_millions DESC;
 ```
-
-<img width="181" alt="Screenshot 2025-01-02 at 10 26 34 AM" src="https://github.com/user-attachments/assets/7f0201be-96bc-4246-bd33-3186a183932c" />
 
 <img width="1279" alt="Screenshot 2025-01-02 at 10 09 09 AM" src="https://github.com/user-attachments/assets/188e630d-9567-4503-adab-882753b0595d" />
 
