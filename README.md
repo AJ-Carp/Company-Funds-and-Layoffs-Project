@@ -53,7 +53,7 @@ SELECT *
 FROM top_5_per_year
 WHERE row_num <= 5;
 ```
-Output of query formated in excel:
+Output of query formated in Excel:
 
 <img width="1166" alt="Screenshot 2025-01-02 at 9 08 28 AM" src="https://github.com/user-attachments/assets/63a37d90-424e-4f86-a37f-b3dd98db4d51" />
 
@@ -73,7 +73,7 @@ GROUP BY company
 ORDER BY 2 DESC
 LIMIT 10;
 ```
-Output of query formated in excel:
+Output of query formated in Tableau:
 
 <img width="875" alt="Screenshot 2025-01-02 at 9 20 59 AM" src="https://github.com/user-attachments/assets/3795f7a0-60e7-47bb-a605-94df87f9e2cc" />
 
