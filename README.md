@@ -55,7 +55,7 @@ WHERE row_num <= 5;
 ```
 Output of query formated in excel:
 
-<img width="1052" alt="Screenshot 2025-01-01 at 12 29 43 PM" src="https://github.com/user-attachments/assets/193f9efd-85a2-4d1e-990e-821f7671c329" />
+<img width="1166" alt="Screenshot 2025-01-02 at 9 08 28 AM" src="https://github.com/user-attachments/assets/63a37d90-424e-4f86-a37f-b3dd98db4d51" />
 
 
 Here's the breakdown:
