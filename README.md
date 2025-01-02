@@ -73,6 +73,7 @@ GROUP BY company
 ORDER BY 2 DESC
 LIMIT 10;
 ```
+Output of query formated in excel:
 
 <img width="875" alt="Screenshot 2025-01-02 at 9 20 59 AM" src="https://github.com/user-attachments/assets/3795f7a0-60e7-47bb-a605-94df87f9e2cc" />
 
