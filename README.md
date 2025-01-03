@@ -215,6 +215,25 @@ Here's a breakdown of the most optimal skills for Data Analysts in 2023:
 - **Business Intelligence and Visualization Tools:** Tableau and Looker, with demand counts of 230 and 49 respectively, and average salaries around $99,288 and $103,795, highlight the critical role of data visualization and business intelligence in deriving actionable insights from data.
 - **Database Technologies:** The demand for skills in traditional and NoSQL databases (Oracle, SQL Server, NoSQL) with average salaries ranging from $97,786 to $104,534, reflects the enduring need for data storage, retrieval, and management expertise.
 
+### 6. Which company raised the most funds? 
+```sql
+SELECT company, SUM(funds_raised_millions) AS sum_of_funds
+FROM layoffs_staging
+GROUP BY company 
+ORDER BY 2 DESC
+LIMIT 10;
+```
+Output of query formated in Tableau:
+
+<img width="875" alt="Screenshot 2025-01-02 at 9 20 59 AM" src="https://github.com/user-attachments/assets/3795f7a0-60e7-47bb-a605-94df87f9e2cc" />
+
+
+Here's the breakdown:
+- The companies are grouped together, showing the sum of all funds for each company.
+- The legend on the right tells us the industry each company is part of.
+- Netflix takes the lead with more then 3 times the funds the runner up had!
+- Unsurprisingly, Netflix is considered part of the media industry.
+- I must investigate futher!
 # What I Learned
 
 Throughout this adventure, I've turbocharged my SQL toolkit with some serious firepower:
