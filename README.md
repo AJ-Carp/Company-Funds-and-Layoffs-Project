@@ -155,10 +155,10 @@ WHERE company = 'Netflix';
 
 
 Here's a breakdown:
-- The inner query assigns a rank to each company based on its layoff percentage, with a higher rank indicating a larger percentage of the company was laid off.
-- This inner query reveals that theres a total of 118 ranks.
-- I then put this query inside of a CTE so I could target the rank where the company was Netflix.
-- I found that Netflix ranked 116 out of 118 ranks, making them one of the companies with the lowest percentage laid off!
+- The inner query groups by company and finds there average percentage_laid_off.
+- I then put this query inside of a CTE to assign ranks to each company based on layoff percentages, with a higher rank indicating a larger percentage of the company was laid off.
+- If executed without the WHERE statement targeting companies with the name Netlix, the output shows a total of 118 ranks.
+- I then added the WHERE statement and found that Netflix ranked 116 out of 118 ranks, making them one of the companies with the lowest percentage laid off!
 
 
 *Table of the average salary for the top 10 paying skills for data analysts*
