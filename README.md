@@ -125,7 +125,7 @@ Here's the breakdown:
 
 
 ### 4.  Did this leading company have significantly higher or lower amount of layoffs then other companies?
-Exploring the average salaries associated with different skills revealed which skills are the highest paying.
+
 ```sql
 WITH ranks AS 
 (
@@ -141,6 +141,10 @@ SELECT *
 FROM ranks 
 WHERE company = 'Netflix';
 ```
+
+<img width="243" alt="Screenshot 2025-01-03 at 10 38 04 AM" src="https://github.com/user-attachments/assets/9070ba23-5681-47d4-9675-a1d0e364945e" />
+
+
 Here's a breakdown of the results for top paying skills for Data Analysts:
 - **High Demand for Big Data & ML Skills:** Top salaries are commanded by analysts skilled in big data technologies (PySpark, Couchbase), machine learning tools (DataRobot, Jupyter), and Python libraries (Pandas, NumPy), reflecting the industry's high valuation of data processing and predictive modeling capabilities.
 - **Software Development & Deployment Proficiency:** Knowledge in development and deployment tools (GitLab, Kubernetes, Airflow) indicates a lucrative crossover between data analysis and engineering, with a premium on skills that facilitate automation and efficient data pipeline management.
