@@ -127,6 +127,14 @@ Here's the breakdown:
 ### 4.  Did this leading company have significantly higher or lower amount of layoffs then other companies?
 
 ```sql
+-- inner query showing all ranks
+SELECT company, AVG(percentage_laid_off) AS lay_offs
+FROM layoffs_staging
+WHERE percentage_laid_off IS NOT NULL
+GROUP BY company
+ORDER BY lay_offs DESC;
+
+-- inner query inside of CTE to target netflix's ranking
 WITH ranks AS 
 (
 	SELECT *, DENSE_RANK() OVER(ORDER BY lay_offs DESC) AS `rank`
@@ -140,6 +148,7 @@ WITH ranks AS
 SELECT *
 FROM ranks 
 WHERE company = 'Netflix';
+
 ```
 
 <img width="243" alt="Screenshot 2025-01-03 at 10 38 04 AM" src="https://github.com/user-attachments/assets/9070ba23-5681-47d4-9675-a1d0e364945e" />
