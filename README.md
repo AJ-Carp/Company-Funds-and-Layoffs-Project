@@ -161,7 +161,6 @@ Here's a breakdown:
 - I then added the WHERE statement and found that Netflix ranked 116 out of 118 ranks, making them one of the companies with the lowest percentage laid off!
 
 
-*Table of the average salary for the top 10 paying skills for data analysts*
 
 ### 5. Throughout the industries, is there a correlation between layoffs and funds raised?
 
