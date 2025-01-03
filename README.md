@@ -155,7 +155,7 @@ WHERE company = 'Netflix';
 
 
 Here's a breakdown:
-- The inner query ranks each company by there percentage laid off, the higher the rank the higher the percentage of the company was laid off.
+- The inner query assigns a rank to each company based on its layoff percentage, with a higher rank indicating a larger percentage of the company was laid off.
 - This inner query reveals that theres a total of 118 ranks.
 - I then put this query inside of a CTE so I could target the rank where the company was Netflix.
 - I found that Netflix ranked 116 out of 118 ranks, making them one of the companies with the lowest percentage laid off!
