@@ -190,18 +190,11 @@ ORDER BY
 LIMIT 25;
 ```
 
-| Skill ID | Skills     | Demand Count | Average Salary ($) |
-|----------|------------|--------------|-------------------:|
-| 8        | go         | 27           |            115,320 |
-| 234      | confluence | 11           |            114,210 |
-| 97       | hadoop     | 22           |            113,193 |
-| 80       | snowflake  | 37           |            112,948 |
-| 74       | azure      | 34           |            111,225 |
-| 77       | bigquery   | 13           |            109,654 |
-| 76       | aws        | 32           |            108,317 |
-| 4        | java       | 17           |            106,906 |
-| 194      | ssis       | 12           |            106,683 |
-| 233      | jira       | 20           |            104,918 |
+<img width="330" alt="Screenshot 2025-01-03 at 10 20 18 AM" src="https://github.com/user-attachments/assets/b65272d6-6136-47ae-91ef-7d37483d7479" />
+
+
+<img width="868" alt="Screenshot 2025-01-03 at 10 15 29 AM" src="https://github.com/user-attachments/assets/61bf5135-8650-449c-bdca-6dab3153ddc6" />
+
 
 *Table of the most optimal skills for data analyst sorted by salary*
 
