@@ -124,7 +124,7 @@ Here's the breakdown:
 
 
 
-### 4. Skills Based on Salary
+### 4.  Did this leading company have significantly higher or lower amount of layoffs then other companies?
 Exploring the average salaries associated with different skills revealed which skills are the highest paying.
 ```sql
 SELECT 
