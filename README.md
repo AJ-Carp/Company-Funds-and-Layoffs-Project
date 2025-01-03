@@ -154,11 +154,11 @@ WHERE company = 'Netflix';
 <img width="243" alt="Screenshot 2025-01-03 at 10 38 04 AM" src="https://github.com/user-attachments/assets/9070ba23-5681-47d4-9675-a1d0e364945e" />
 
 
-Here's a breakdown of the results for top paying skills for Data Analysts:
-- **High Demand for Big Data & ML Skills:** Top salaries are commanded by analysts skilled in big data technologies (PySpark, Couchbase), machine learning tools (DataRobot, Jupyter), and Python libraries (Pandas, NumPy), reflecting the industry's high valuation of data processing and predictive modeling capabilities.
-- **Software Development & Deployment Proficiency:** Knowledge in development and deployment tools (GitLab, Kubernetes, Airflow) indicates a lucrative crossover between data analysis and engineering, with a premium on skills that facilitate automation and efficient data pipeline management.
-- **Cloud Computing Expertise:** Familiarity with cloud and data engineering tools (Elasticsearch, Databricks, GCP) underscores the growing importance of cloud-based analytics environments, suggesting that cloud proficiency significantly boosts earning potential in data analytics.
-
+Here's a breakdown:
+- The inner query ranks each company by there percentage laid off, the higher the rank the higher the percentage of the company was laid off.
+- This inner query reveals that theres a total of 118 ranks.
+- I then put this query inside of a CTE so I could target the rank where the company was Netflix.
+- I found that Netflix ranked 116 out of 118 ranks, making them one of the companies with the lowest percentage laid off!
 
 
 *Table of the average salary for the top 10 paying skills for data analysts*
