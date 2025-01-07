@@ -168,7 +168,8 @@ Here's a breakdown:
 
 Here's the breakdown: 
 
-- As you can see, most of the companies that raised lots of funds fall below the average percent laid off line.
+- almost all of the companies that raised lots of funds fall below the average percent laid off line.
+- Most companies fall directly on the average funds line and below the average percent laid off line.
 
 <img width="685" alt="Screenshot 2025-01-07 at 2 41 27 PM" src="https://github.com/user-attachments/assets/1f1b4037-161b-4af5-aa3a-92a00378ff92" />
 
