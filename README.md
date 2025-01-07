@@ -164,8 +164,6 @@ Here's a breakdown:
 
 ### 5. Throughout the industries, is there a correlation between layoffs and funds raised?
 
-Combining insights from demand and salary data, this query aimed to pinpoint skills that are both in high demand and have high salaries, offering a strategic focus for skill development.
-
 ```sql
 WITH avg_funds_and_layoffs AS 
 (
@@ -202,13 +200,9 @@ ORDER BY layoffs_and_funds;
 
 <img width="330" alt="Screenshot 2025-01-03 at 10 20 18 AM" src="https://github.com/user-attachments/assets/b65272d6-6136-47ae-91ef-7d37483d7479" />
 
-
 <img width="868" alt="Screenshot 2025-01-03 at 10 15 29 AM" src="https://github.com/user-attachments/assets/61bf5135-8650-449c-bdca-6dab3153ddc6" />
 
-
-*Table of the most optimal skills for data analyst sorted by salary*
-
-Here's a breakdown of the most optimal skills for Data Analysts in 2023: 
+Here's the breakdown: 
 - **High-Demand Programming Languages:** Python and R stand out for their high demand, with demand counts of 236 and 148 respectively. Despite their high demand, their average salaries are around $101,397 for Python and $100,499 for R, indicating that proficiency in these languages is highly valued but also widely available.
 - **Cloud Tools and Technologies:** Skills in specialized technologies such as Snowflake, Azure, AWS, and BigQuery show significant demand with relatively high average salaries, pointing towards the growing importance of cloud platforms and big data technologies in data analysis.
 - **Business Intelligence and Visualization Tools:** Tableau and Looker, with demand counts of 230 and 49 respectively, and average salaries around $99,288 and $103,795, highlight the critical role of data visualization and business intelligence in deriving actionable insights from data.
