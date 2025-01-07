@@ -206,10 +206,13 @@ Output of query formated in Excel:
 <img width="868" alt="Screenshot 2025-01-03 at 10 15 29 AM" src="https://github.com/user-attachments/assets/61bf5135-8650-449c-bdca-6dab3153ddc6" />
 
 Here's the breakdown: 
-- **High-Demand Programming Languages:** Python and R stand out for their high demand, with demand counts of 236 and 148 respectively. Despite their high demand, their average salaries are around $101,397 for Python and $100,499 for R, indicating that proficiency in these languages is highly valued but also widely available.
-- **Cloud Tools and Technologies:** Skills in specialized technologies such as Snowflake, Azure, AWS, and BigQuery show significant demand with relatively high average salaries, pointing towards the growing importance of cloud platforms and big data technologies in data analysis.
-- **Business Intelligence and Visualization Tools:** Tableau and Looker, with demand counts of 230 and 49 respectively, and average salaries around $99,288 and $103,795, highlight the critical role of data visualization and business intelligence in deriving actionable insights from data.
-- **Database Technologies:** The demand for skills in traditional and NoSQL databases (Oracle, SQL Server, NoSQL) with average salaries ranging from $97,786 to $104,534, reflects the enduring need for data storage, retrieval, and management expertise.
+- In this query I used case statements to group the industries into to 4 different categories: 'high layoffs and high funds', 'low layoffs and low funds',
+  'low layoffs and high funds', and 'high layoffs and low funds'.
+- I did so by comparing each companies’ funds raised and percentage laid off to the overall average of all companies’ percentage laid off and funds raised.
+- In the output we can see there is no strong suggestion that high funds lead to less layoffs within companies.
+- The colors in the output are only used to differentiate the groups more easily and have no significant meaning.
+- 
+
 
 ### 6. Which company raised the most funds? 
 ```sql
