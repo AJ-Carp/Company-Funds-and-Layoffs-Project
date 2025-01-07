@@ -168,13 +168,9 @@ Visualization made in tableau from entire data set:
 
 <img width="722" alt="Screenshot 2025-01-07 at 2 06 47 PM" src="https://github.com/user-attachments/assets/e576c285-f654-4034-9627-2288f5012812" />
 
-
 Here's the breakdown: 
-- In this query I used case statements to group the industries into to 4 different categories: 'high layoffs and high funds', 'low layoffs and low funds',
-  'low layoffs and high funds', and 'high layoffs and low funds'.
-- I did so by comparing each companies’ funds raised and percentage laid off to the overall average of all companies’ percentage laid off and funds raised.
-- In the output we can see there is no strong suggestion that high funds lead to less layoffs within companies.
-- The colors in the output are only used to differentiate the groups more easily and have no significant meaning.
+
+- As you can see all companies except one that have  
 
 This screenshot I took of a tableau tree map also suggests no strong correlation between funds raised and percentage laid off.
 <img width="868" alt="Screenshot 2025-01-03 at 10 15 29 AM" src="https://github.com/user-attachments/assets/61bf5135-8650-449c-bdca-6dab3153ddc6" />
