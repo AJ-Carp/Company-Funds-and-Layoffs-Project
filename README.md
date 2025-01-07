@@ -170,7 +170,7 @@ Visualization made in tableau from entire data set:
 
 Here's the breakdown: 
 
-- As you can see all companies except one that are well above the average 
+- As you can see, most of the companies that raised lots of funds fall below the average percent laid off line.
 
 This screenshot I took of a tableau tree map also suggests no strong correlation between funds raised and percentage laid off.
 <img width="868" alt="Screenshot 2025-01-03 at 10 15 29 AM" src="https://github.com/user-attachments/assets/61bf5135-8650-449c-bdca-6dab3153ddc6" />
