@@ -12,7 +12,7 @@ As job hunting grows more challenging, I started to consider whether data analys
 2. Which company raised the most funds?
 3. Is there a correlation between the leading company and industry for funds raised?
 4. Did this leading company have significantly higher or lower amount of layoffs then other companies?
-5. Throughout the industries, is there a correlation between layoffs and funds raised?
+5. Throughout the companies, is there a correlation between layoffs and funds raised?
 6. What are the top 5 companies with the most layoffs per year?
 
 # Tools I Used
@@ -162,45 +162,12 @@ Here's a breakdown:
 
 
 
-### 5. Throughout the industries, is there a correlation between layoffs and funds raised?
+### 5. Throughout the companies, is there a correlation between layoffs and funds raised?
 
-```sql
-WITH avg_funds_and_layoffs AS 
-(
-	SELECT industry, AVG(funds_raised_millions) AS average_funds, AVG(percentage_laid_off) AS average_laid_off
-	FROM layoffs_staging
-	WHERE funds_raised_millions IS NOT NULL AND percentage_laid_off IS NOT NULL AND industry IS NOT NULL
-	GROUP BY industry
-)
-         SELECT industry,
-		 CASE 
-             WHEN average_funds > (SELECT AVG(funds_raised_millions) AS avg_funds
-			 FROM layoffs_staging) 
-			 AND average_laid_off > (SELECT AVG(percentage_laid_off) AS avg_funds
-			 FROM layoffs_staging) THEN 'high layoffs and high funds'
-			 
-			 WHEN average_funds < (SELECT AVG(funds_raised_millions) AS avg_funds
-			 FROM layoffs_staging) 
-			 AND average_laid_off < (SELECT AVG(percentage_laid_off) AS avg_funds
-			 FROM layoffs_staging) THEN 'low layoffs and low funds'
-			 
-			 WHEN average_funds > (SELECT AVG(funds_raised_millions) AS avg_funds
-			 FROM layoffs_staging) 
-			 AND average_laid_off < (SELECT AVG(percentage_laid_off) AS avg_funds
-			 FROM layoffs_staging) THEN 'low layoffs and high funds'
-			 
-			 WHEN average_funds < (SELECT AVG(funds_raised_millions) AS avg_funds
-			 FROM layoffs_staging) 
-			 AND average_laid_off > (SELECT AVG(percentage_laid_off) AS avg_funds
-			 FROM layoffs_staging) THEN 'high layoffs and low funds'
-		 END AS layoffs_and_funds
-FROM avg_funds_and_layoffs
-ORDER BY layoffs_and_funds;
-```
+Visualization made in tableau from entire data set:
 
-Output of query formated in Excel:
+<img width="722" alt="Screenshot 2025-01-07 at 2 06 47 PM" src="https://github.com/user-attachments/assets/e576c285-f654-4034-9627-2288f5012812" />
 
-<img width="222" alt="Screenshot 2025-01-07 at 11 57 11 AM" src="https://github.com/user-attachments/assets/3d4de847-4a04-47ab-a969-c9a4eb10c5b1" />
 
 Here's the breakdown: 
 - In this query I used case statements to group the industries into to 4 different categories: 'high layoffs and high funds', 'low layoffs and low funds',
