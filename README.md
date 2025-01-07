@@ -166,7 +166,7 @@ Here's a breakdown:
 
 companies
 
-<img width="722" alt="Screenshot 2025-01-07 at 2 06 47 PM" src="https://github.com/user-attachments/assets/e576c285-f654-4034-9627-2288f5012812" />
+
 
 Here's the breakdown: 
 
@@ -174,7 +174,8 @@ Here's the breakdown:
 
 industries
 
-<img width="868" alt="Screenshot 2025-01-03 at 10 15 29 AM" src="https://github.com/user-attachments/assets/61bf5135-8650-449c-bdca-6dab3153ddc6" />
+<img width="685" alt="Screenshot 2025-01-07 at 2 41 27 PM" src="https://github.com/user-attachments/assets/1f1b4037-161b-4af5-aa3a-92a00378ff92" />
+
 
 Here's the breakdown: 
 - Each square represents an industry
