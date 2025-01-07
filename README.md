@@ -198,7 +198,8 @@ FROM avg_funds_and_layoffs
 ORDER BY layoffs_and_funds;
 ```
 
-<img width="330" alt="Screenshot 2025-01-03 at 10 20 18 AM" src="https://github.com/user-attachments/assets/b65272d6-6136-47ae-91ef-7d37483d7479" />
+<img width="222" alt="Screenshot 2025-01-07 at 11 57 11 AM" src="https://github.com/user-attachments/assets/3d4de847-4a04-47ab-a969-c9a4eb10c5b1" />
+
 
 <img width="868" alt="Screenshot 2025-01-03 at 10 15 29 AM" src="https://github.com/user-attachments/assets/61bf5135-8650-449c-bdca-6dab3153ddc6" />
 
