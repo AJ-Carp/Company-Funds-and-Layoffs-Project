@@ -162,9 +162,9 @@ Here's a breakdown:
 
 
 
-### 5. Throughout the companies, is there a correlation between layoffs and funds raised?
+### 5. Throughout the companies and industries, is there a correlation between layoffs and funds raised?
 
-Visualization made in tableau from entire data set:
+companies
 
 <img width="722" alt="Screenshot 2025-01-07 at 2 06 47 PM" src="https://github.com/user-attachments/assets/e576c285-f654-4034-9627-2288f5012812" />
 
@@ -172,7 +172,8 @@ Here's the breakdown:
 
 - As you can see, most of the companies that raised lots of funds fall below the average percent laid off line.
 
-This screenshot I took of a tableau tree map also suggests no strong correlation between funds raised and percentage laid off.
+industries
+
 <img width="868" alt="Screenshot 2025-01-03 at 10 15 29 AM" src="https://github.com/user-attachments/assets/61bf5135-8650-449c-bdca-6dab3153ddc6" />
 
 Here's the breakdown: 
