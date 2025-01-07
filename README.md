@@ -238,8 +238,7 @@ WHERE Ranking <= 5;
 ```
 Output of query formated in Tableau:
 
-<img width="875" alt="Screenshot 2025-01-02 at 9 20 59 AM" src="https://github.com/user-attachments/assets/3795f7a0-60e7-47bb-a605-94df87f9e2cc" />
-
+<img width="789" alt="Screenshot 2025-01-07 at 12 46 44 PM" src="https://github.com/user-attachments/assets/6255d5b2-d046-4e5f-b92f-1be98ca5a28c" />
 
 Here's the breakdown:
 - The companies are grouped together, showing the sum of all funds for each company.
