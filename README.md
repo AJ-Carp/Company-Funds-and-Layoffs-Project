@@ -217,13 +217,24 @@ Here's the breakdown:
 - The size of the square represents the average funds raised for that industry, bigger squares indicating higher funds.
 - The color of the square represents the average percentage laid off for that industry, darker shades indicating higher percentages.
 
-### 6. Which company raised the most funds? 
+### 6. What are the top 5 companies with the most layoffs per year?
 ```sql
-SELECT company, SUM(funds_raised_millions) AS sum_of_funds
-FROM layoffs_staging
-GROUP BY company 
-ORDER BY 2 DESC
-LIMIT 10;
+WITH Company_Year (company, years, total_laid_off) AS
+(
+	SELECT company, YEAR(date), SUM(total_laid_off)
+    FROM layoffs_staging
+    GROUP BY company, YEAR(date)
+),
+Company_Year_rank AS
+(
+	SELECT *, DENSE_RANK() OVER (PARTITION BY years ORDER BY total_laid_off DESC) AS Ranking
+	FROM company_Year
+	WHERE years IS NOT NULL
+)
+SELECT *
+FROM Company_Year_rank
+WHERE Ranking <= 5;
+
 ```
 Output of query formated in Tableau:
 
