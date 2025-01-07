@@ -164,18 +164,13 @@ Here's a breakdown:
 
 ### 5. Throughout the companies and industries, is there a correlation between layoffs and funds raised?
 
-companies
-
-
+<img width="690" alt="Screenshot 2025-01-07 at 2 44 02 PM" src="https://github.com/user-attachments/assets/9e6ab198-06c3-4c92-9842-7b6c8c9ae05e" />
 
 Here's the breakdown: 
 
 - As you can see, most of the companies that raised lots of funds fall below the average percent laid off line.
 
-industries
-
 <img width="685" alt="Screenshot 2025-01-07 at 2 41 27 PM" src="https://github.com/user-attachments/assets/1f1b4037-161b-4af5-aa3a-92a00378ff92" />
-
 
 Here's the breakdown: 
 - Each square represents an industry
