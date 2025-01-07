@@ -209,7 +209,13 @@ Here's the breakdown:
 - In the output we can see there is no strong suggestion that high funds lead to less layoffs within companies.
 - The colors in the output are only used to differentiate the groups more easily and have no significant meaning.
 
+This screenshot I took of a tableau tree map also suggests no strong correlation between funds raised and percentage laid off.
 <img width="868" alt="Screenshot 2025-01-03 at 10 15 29 AM" src="https://github.com/user-attachments/assets/61bf5135-8650-449c-bdca-6dab3153ddc6" />
+
+Here's the breakdown: 
+- Each square represents an industry
+- The size of the square represents the average funds raised for that industry, bigger squares indicating higher funds.
+- The color of the square represents the average percentage laid off for that industry, darker shades indicating higher percentages.
 
 ### 6. Which company raised the most funds? 
 ```sql
