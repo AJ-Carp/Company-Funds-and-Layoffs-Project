@@ -168,12 +168,14 @@ Here's a breakdown:
 
 Here's the breakdown: 
 
-- almost all of the companies that raised lots of funds fall below the average percent laid off line.
+- Almost all of the companies that raised lots of funds fall below the average percent laid off line.
 - Most companies fall directly on the average funds line and below the average percent laid off line.
+- This suggests that if the funds are very high then the compnay probably has low layoffs as well.
+- However, low layoffs does not mean high funds.
 
 <img width="685" alt="Screenshot 2025-01-07 at 2 41 27 PM" src="https://github.com/user-attachments/assets/1f1b4037-161b-4af5-aa3a-92a00378ff92" />
 
-Here's the breakdown: 
+Here's the breakdown: (maybe do percentage of companies in each catorgy rather then looking at industry)
 - Each square represents an industry
 - The size of the square represents the average funds raised for that industry, bigger squares indicating higher funds.
 - The color of the square represents the average percentage laid off for that industry, darker shades indicating higher percentages.
