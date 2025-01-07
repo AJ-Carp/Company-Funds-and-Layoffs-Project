@@ -202,17 +202,14 @@ Output of query formated in Excel:
 
 <img width="222" alt="Screenshot 2025-01-07 at 11 57 11 AM" src="https://github.com/user-attachments/assets/3d4de847-4a04-47ab-a969-c9a4eb10c5b1" />
 
-
-<img width="868" alt="Screenshot 2025-01-03 at 10 15 29 AM" src="https://github.com/user-attachments/assets/61bf5135-8650-449c-bdca-6dab3153ddc6" />
-
 Here's the breakdown: 
 - In this query I used case statements to group the industries into to 4 different categories: 'high layoffs and high funds', 'low layoffs and low funds',
   'low layoffs and high funds', and 'high layoffs and low funds'.
 - I did so by comparing each companies’ funds raised and percentage laid off to the overall average of all companies’ percentage laid off and funds raised.
 - In the output we can see there is no strong suggestion that high funds lead to less layoffs within companies.
 - The colors in the output are only used to differentiate the groups more easily and have no significant meaning.
-- 
 
+<img width="868" alt="Screenshot 2025-01-03 at 10 15 29 AM" src="https://github.com/user-attachments/assets/61bf5135-8650-449c-bdca-6dab3153ddc6" />
 
 ### 6. Which company raised the most funds? 
 ```sql
