@@ -198,6 +198,8 @@ FROM avg_funds_and_layoffs
 ORDER BY layoffs_and_funds;
 ```
 
+Output of query formated in Excel:
+
 <img width="222" alt="Screenshot 2025-01-07 at 11 57 11 AM" src="https://github.com/user-attachments/assets/3d4de847-4a04-47ab-a969-c9a4eb10c5b1" />
 
 
