@@ -137,6 +137,8 @@ Here's a breakdown:
 
 - Media contains 65 companies and altogether raised $504,783.2 in funds.
 - Netflix raised 96.6% of those funds!
+- Recall the output of question 1 where we found that media only made the top 5 for funds in 2022.
+- 
 
 ### 4.  Did this leading company have a significantly higher or lower amount of layoffs then other companies?
 
