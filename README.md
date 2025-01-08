@@ -106,7 +106,7 @@ SELECT sum_funds_netflix, sum_funds_media, ROUND(sum_funds_netflix/sum_funds_med
 FROM media_total
 JOIN netflix_total;
 ```
-
+Output:
 <img width="275" alt="Screenshot 2025-01-08 at 1 42 38 PM" src="https://github.com/user-attachments/assets/d6082932-ce68-42cb-a1c8-c08b42606804" />
 
 ```sql
@@ -114,25 +114,7 @@ SELECT COUNT(DISTINCT company) AS media_companies
 FROM layoffs_staging
 WHERE industry = 'media';
 ```
-
-This additional query connects everything together regarding the correlation between Netlfix and the media industries high funds in 2022.
-```sql
--- most funds raised in media
-SELECT *
-FROM layoffs_staging
-WHERE industry = 'media'
-ORDER BY funds_raised_millions DESC;
-```
-Output of query formated in Excel:
-
-<img width="1264" alt="Screenshot 2025-01-02 at 10 34 04 AM" src="https://github.com/user-attachments/assets/9f0ac649-1c05-4281-915d-9486e7a7d833" />
-
-Here's the breakdown:
-- This query shows all data for the media industry ordered descending by the funds_raised_millions.
-- Highlighted in green we see Netflix under company, SF Bay Area under location, media under industry, 2022 under date and very high funds under funds_raised_millions.
-
-
-
+Output:
 ### 4.  Did this leading company have significantly higher or lower amount of layoffs then other companies?
 
 ```sql
