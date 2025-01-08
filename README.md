@@ -188,8 +188,8 @@ Here's the breakdown:
 
 - Almost all of the companies that raised lots of funds fall below the average percent laid off line.
 - Most companies fall directly on the average funds line and below the average percent laid off line.
-- This suggests that if the funds are very high then the compnay probably has low layoffs as well.
-- However, since most companies fall below the average percent laid off line, low layoffs is not a strong indication of high funds.
+- This suggests that if the funds are very high then the company probably has low layoffs as well.
+- However, since most companies fall below the average percent laid off line and directly on the average funds line, low layoffs is not a strong indication of high funds.
 
 The additional query below verifies that a lot more companies have below average layoff percentages then above average layoff percentages.
 
