@@ -227,15 +227,11 @@ Output:
 
 
 ### 6. What are the top 5 companies with the most layoffs per year?
-
+(could do industries as well)
 <img width="789" alt="Screenshot 2025-01-07 at 12 46 44 PM" src="https://github.com/user-attachments/assets/6255d5b2-d046-4e5f-b92f-1be98ca5a28c" />
 
 Here's the breakdown:
-- The companies are grouped together, showing the sum of all funds for each company.
-- The legend on the right tells us the industry each company is part of.
-- Netflix takes the lead with more then 3 times the funds the runner up had!
-- Unsurprisingly, Netflix is considered part of the media industry.
-- I must investigate futher!
+
 # What I Learned
 
 Throughout this adventure, I've turbocharged my SQL toolkit with some serious firepower:
