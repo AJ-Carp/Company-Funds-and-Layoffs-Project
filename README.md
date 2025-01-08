@@ -191,6 +191,31 @@ Here's the breakdown:
 - This suggests that if the funds are very high then the compnay probably has low layoffs as well.
 - However, since most companies fall below the average percent laid off line, low layoffs is not a strong indication of high funds.
 
+```sql
+-- stored procedure to differentiate companies with below average layoff percentages and above average layoff percentages
+CREATE TEMPORARY TABLE funds_layoffs_bins
+	WITH avg_funds_and_layoffs AS 
+	(
+		SELECT company, AVG(funds_raised_millions) AS average_funds, AVG(percentage_laid_off) AS average_laid_off
+		FROM layoffs_staging
+		WHERE funds_raised_millions IS NOT NULL AND percentage_laid_off IS NOT NULL
+		GROUP BY company
+	)
+			SELECT company,
+		 CASE 
+             WHEN average_laid_off > (SELECT AVG(percentage_laid_off) AS avg_funds
+			 FROM layoffs_staging) THEN 'high layoffs'
+			 
+			 WHEN average_laid_off < (SELECT AVG(percentage_laid_off) AS avg_funds
+			 FROM layoffs_staging) THEN 'low layoffs'
+		 END AS layoffs_and_funds
+	FROM avg_funds_and_layoffs
+	ORDER BY layoffs_and_funds;
+       
+-- counting how many in each category
+SELECT layoffs_and_funds, COUNT(layoffs_and_funds) AS category_count
+FROM funds_layoffs_bins
+GROUP BY layoffs_and_funds;```
 
 
 ### 6. What are the top 5 companies with the most layoffs per year?
@@ -210,7 +235,6 @@ Company_Year_rank AS
 SELECT *
 FROM Company_Year_rank
 WHERE Ranking <= 5;
-
 ```
 Output of query formated in Tableau:
 
