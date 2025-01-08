@@ -217,6 +217,10 @@ SELECT layoffs_and_funds, COUNT(layoffs_and_funds) AS category_count
 FROM funds_layoffs_bins
 GROUP BY layoffs_and_funds;
 ```
+
+<img width="201" alt="Screenshot 2025-01-08 at 3 57 57 PM" src="https://github.com/user-attachments/assets/a6c4a56e-0b54-4afc-b78a-6ea8b0b3d0fc" />
+
+
 ### 6. What are the top 5 companies with the most layoffs per year?
 
 <img width="789" alt="Screenshot 2025-01-07 at 12 46 44 PM" src="https://github.com/user-attachments/assets/6255d5b2-d046-4e5f-b92f-1be98ca5a28c" />
