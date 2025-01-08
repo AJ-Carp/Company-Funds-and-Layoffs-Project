@@ -10,8 +10,8 @@ As job hunting grows more challenging, I started to consider whether data analys
 
 1. Which industry raised the most funds?
 2. Which company raised the most funds?
-3. Is there a correlation between the leading company and industry for funds raised?
-4. Did this leading company have significantly higher or lower amount of layoffs then other companies?
+3. Is the leading company part of the leading industry and how responable is it for the industries success in terms of funds raised.
+4. Did this leading company have a significantly higher or lower amount of layoffs then other companies?
 5. Throughout the companies and industries, is there a correlation between layoffs and funds raised?
 6. What are the top 5 companies with the most layoffs per year?
 
