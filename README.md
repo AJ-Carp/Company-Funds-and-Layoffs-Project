@@ -11,9 +11,9 @@ As job hunting grows more challenging, I started to consider whether data analys
 1. Which industry raised the most funds?
 2. Which company raised the most funds and which industry is it part of?
 3. What percent does this leading company make up of it industries overall funds raised?
-4. Did this leading company have a significantly higher or lower amount of layoffs then other companies?
+4. Did this leading company layoff a smaller percent of there employees compared to other companies?
 5. Throughout the companies, is there a correlation between layoffs and funds raised?
-6. What are the top 5 companies with the most layoffs per year?
+6. What are the top 5 companies with the most layoffs per year? (maybe do industry)
 
 # Tools I Used
 
@@ -143,7 +143,7 @@ Here's the breakdown:
 - Netflix only has entries for 2022 and makes up 96.6% of the total media funds. From this we can deduce that Netfix is the sole reason that media only made the
 top 5 for the year 2022.
 
-### 4.  Did this leading company have a significantly higher or lower amount of layoffs then other companies?
+### 4. Did this leading company layoff a smaller percent of there employees compared to other companies?
 
 ```sql
 -- inner query showing all ranks
