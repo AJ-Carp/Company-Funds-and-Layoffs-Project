@@ -12,7 +12,7 @@ As job hunting grows more challenging, I started to consider whether data analys
 2. Which company raised the most funds and which industry is it part of?
 3. What percent does this leading company make up of it industries overall funds raised?
 4. Did this leading company have a significantly higher or lower amount of layoffs then other companies?
-5. Throughout the companies and industries, is there a correlation between layoffs and funds raised?
+5. Throughout the companies, is there a correlation between layoffs and funds raised?
 6. What are the top 5 companies with the most layoffs per year?
 
 # Tools I Used
@@ -180,7 +180,7 @@ Here's the breakdown:
 - If executed without the WHERE statement to target Netlix, the output shows a total of 118 ranks.
 - With the WHERE statement, I found that Netflix ranked 116 out of 118 ranks, making them one of the companies with the lowest percentage laid off!
 
-### 5. Throughout the companies and industries, is there a correlation between layoffs and funds raised?
+### 5. Throughout the companies, is there a correlation between layoffs and funds raised?
 
 <img width="690" alt="Screenshot 2025-01-07 at 2 44 02 PM" src="https://github.com/user-attachments/assets/9e6ab198-06c3-4c92-9842-7b6c8c9ae05e" />
 
@@ -217,7 +217,7 @@ SELECT layoffs_and_funds, COUNT(layoffs_and_funds) AS category_count
 FROM funds_layoffs_bins
 GROUP BY layoffs_and_funds;
 ```
-Output of query formated in Tableau:
+### 6. What are the top 5 companies with the most layoffs per year?
 
 <img width="789" alt="Screenshot 2025-01-07 at 12 46 44 PM" src="https://github.com/user-attachments/assets/6255d5b2-d046-4e5f-b92f-1be98ca5a28c" />
 
