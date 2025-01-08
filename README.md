@@ -130,6 +130,8 @@ WHERE company = 'Netflix'
 ORDER BY funds_raised_millions DESC;
 ```
 
+Output of query formated in Excel:
+
 <img width="694" alt="Screenshot 2025-01-08 at 3 10 33 PM" src="https://github.com/user-attachments/assets/0a501c86-5018-4103-bad3-00c1e5697eea" />
 
 
