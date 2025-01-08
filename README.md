@@ -102,9 +102,9 @@ SELECT COUNT(DISTINCT company) AS comp_count
 FROM layoffs_staging
 WHERE industry = 'media';
 ```
-Output of query formated in Excel:
 
-<img width="181" alt="Screenshot 2025-01-02 at 10 26 34 AM" src="https://github.com/user-attachments/assets/7f0201be-96bc-4246-bd33-3186a183932c" />
+<img width="60" alt="Screenshot 2025-01-08 at 12 30 49 PM" src="https://github.com/user-attachments/assets/c8efedeb-b5f6-4199-9c49-187a3624fe5e" />
+
 
 Here's the breakdown:
 - This qeury returns the locations where most of the funds were raised by the media industry in 2022.
