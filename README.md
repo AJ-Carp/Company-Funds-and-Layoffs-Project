@@ -151,7 +151,7 @@ FROM ranks
 WHERE company = 'Netflix';
 ```
 
-<img width="243" alt="Screenshot 2025-01-03 at 10 38 04 AM" src="https://github.com/user-attachments/assets/9070ba23-5681-47d4-9675-a1d0e364945e" />
+<img width="296" alt="Screenshot 2025-01-08 at 2 08 28 PM" src="https://github.com/user-attachments/assets/d7b333d0-14eb-44c4-b105-f3a8c8775d63" />
 
 
 Here's a breakdown:
