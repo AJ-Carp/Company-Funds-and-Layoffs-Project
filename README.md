@@ -227,7 +227,9 @@ Output:
 
 
 ### 6. What are the top 5 companies with the most layoffs per year?
+
 (could do industries as well)
+
 <img width="789" alt="Screenshot 2025-01-07 at 12 46 44 PM" src="https://github.com/user-attachments/assets/6255d5b2-d046-4e5f-b92f-1be98ca5a28c" />
 
 Here's the breakdown:
