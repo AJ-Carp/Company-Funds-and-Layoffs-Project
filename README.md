@@ -156,6 +156,7 @@ Output:
 <img width="296" alt="Screenshot 2025-01-08 at 2 08 28 PM" src="https://github.com/user-attachments/assets/d7b333d0-14eb-44c4-b105-f3a8c8775d63" />
 
 Here's a breakdown:
+
 - The inner query groups by company and finds there average percentage_laid_off.
 - I then put this query inside of a CTE to assign ranks to each company based on layoff percentages, with a higher rank indicating a larger percentage of the company was laid off.
 - If executed without the WHERE statement targeting companies with the name Netlix, the output shows a total of 118 ranks.
