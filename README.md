@@ -125,7 +125,7 @@ Here's a breakdown:
 - Media contains 65 companies and altogether raised $504,783.2 in funds.
 - Netflix raised 96.6% of those funds!
 
-### 4.  Did this leading company have significantly higher or lower amount of layoffs then other companies?
+### 4.  Did this leading company have a significantly higher or lower amount of layoffs then other companies?
 
 ```sql
 -- inner query showing all ranks
