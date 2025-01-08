@@ -107,7 +107,7 @@ WHERE industry = 'media';
 
 
 Here's the breakdown:
--
+- ghjghj
 
 This additional query connects everything together regarding the correlation between Netlfix and the media industries high funds in 2022.
 ```sql
