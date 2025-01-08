@@ -107,8 +107,7 @@ FROM media_total
 JOIN netflix_total;
 ```
 
-<img width="60" alt="Screenshot 2025-01-08 at 12 30 49 PM" src="https://github.com/user-attachments/assets/c8efedeb-b5f6-4199-9c49-187a3624fe5e" />
-
+<img width="275" alt="Screenshot 2025-01-08 at 1 42 38 PM" src="https://github.com/user-attachments/assets/d6082932-ce68-42cb-a1c8-c08b42606804" />
 
 Here's the breakdown:
 - ghjghj
