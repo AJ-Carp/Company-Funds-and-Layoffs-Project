@@ -191,12 +191,7 @@ Here's the breakdown:
 - This suggests that if the funds are very high then the compnay probably has low layoffs as well.
 - However, since most companies fall below the average percent laid off line, low layoffs is not a strong indication of high funds.
 
-<img width="685" alt="Screenshot 2025-01-07 at 2 41 27 PM" src="https://github.com/user-attachments/assets/1f1b4037-161b-4af5-aa3a-92a00378ff92" />
 
-Here's the breakdown: (maybe do percentage of companies in each catorgy rather then looking at industry)
-- Each square represents an industry
-- The size of the square represents the average funds raised for that industry, bigger squares indicating higher funds.
-- The color of the square represents the average percentage laid off for that industry, darker shades indicating higher percentages.
 
 ### 6. What are the top 5 companies with the most layoffs per year?
 ```sql
