@@ -215,26 +215,7 @@ CREATE TEMPORARY TABLE funds_layoffs_bins
 -- counting how many in each category
 SELECT layoffs_and_funds, COUNT(layoffs_and_funds) AS category_count
 FROM funds_layoffs_bins
-GROUP BY layoffs_and_funds;```
-
-
-### 6. What are the top 5 companies with the most layoffs per year?
-```sql
-WITH Company_Year (company, years, total_laid_off) AS
-(
-	SELECT company, YEAR(date), SUM(total_laid_off)
-    FROM layoffs_staging
-    GROUP BY company, YEAR(date)
-),
-Company_Year_rank AS
-(
-	SELECT *, DENSE_RANK() OVER (PARTITION BY years ORDER BY total_laid_off DESC) AS Ranking
-	FROM company_Year
-	WHERE years IS NOT NULL
-)
-SELECT *
-FROM Company_Year_rank
-WHERE Ranking <= 5;
+GROUP BY layoffs_and_funds;
 ```
 Output of query formated in Tableau:
 
