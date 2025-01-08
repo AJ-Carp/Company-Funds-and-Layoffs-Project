@@ -121,6 +121,9 @@ Output:
 
 <img width="101" alt="Screenshot 2025-01-08 at 1 53 41 PM" src="https://github.com/user-attachments/assets/44043732-09c5-428e-8794-9fbcd8d9955e" />
 
+Here's a breakdown:
+- Media contains 65 companies and altogether raised 
+- 
 
 ### 4.  Did this leading company have significantly higher or lower amount of layoffs then other companies?
 
