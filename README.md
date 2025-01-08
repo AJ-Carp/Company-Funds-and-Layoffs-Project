@@ -110,7 +110,7 @@ Output:
 
 <img width="275" alt="Screenshot 2025-01-08 at 1 42 38 PM" src="https://github.com/user-attachments/assets/d6082932-ce68-42cb-a1c8-c08b42606804" />
 
-This query reveals that media contains a staggering 65 companies!
+This query below reveals that media contains a staggering 65 companies!
 
 ```sql
 SELECT COUNT(DISTINCT company) AS media_companies
@@ -121,7 +121,7 @@ Output:
 
 <img width="101" alt="Screenshot 2025-01-08 at 1 53 41 PM" src="https://github.com/user-attachments/assets/44043732-09c5-428e-8794-9fbcd8d9955e" />
 
-This query reveals that Netflix only raised funds in 2022.
+This query below reveals that Netflix only raised funds in 2022.
 
 ```sql
 SELECT *
@@ -129,6 +129,9 @@ FROM layoffs_staging
 WHERE company = 'Netflix'
 ORDER BY funds_raised_millions DESC;
 ```
+
+<img width="694" alt="Screenshot 2025-01-08 at 3 10 33 PM" src="https://github.com/user-attachments/assets/0a501c86-5018-4103-bad3-00c1e5697eea" />
+
 
 Here's a breakdown:
 
