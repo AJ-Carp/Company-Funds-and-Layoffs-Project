@@ -90,17 +90,21 @@ Here's the breakdown:
 
 ```sql
 -- netflix funds percent of total media funds
-SELECT ROUND(SUM(funds_raised_millions)/
-	(SELECT SUM(funds_raised_millions) AS sum_funds
+WITH media_total AS
+(
+	SELECT ROUND(SUM(funds_raised_millions),1) AS sum_funds_media
 	FROM layoffs_staging
-	WHERE industry = 'media')*100,1) AS `%_of_total`
-FROM layoffs_staging
-WHERE company = 'Netflix';
-
--- how many companies within media industry
-SELECT COUNT(DISTINCT company) AS comp_count
-FROM layoffs_staging
-WHERE industry = 'media';
+	WHERE industry = 'media'
+),
+netflix_total AS
+(
+	SELECT ROUND(SUM(funds_raised_millions),1) AS sum_funds_netflix
+	FROM layoffs_staging
+	WHERE company = 'Netflix'
+)
+SELECT sum_funds_netflix, sum_funds_media, ROUND(sum_funds_netflix/sum_funds_media*100,1) AS `%_of_total`
+FROM media_total
+JOIN netflix_total;
 ```
 
 <img width="60" alt="Screenshot 2025-01-08 at 12 30 49 PM" src="https://github.com/user-attachments/assets/c8efedeb-b5f6-4199-9c49-187a3624fe5e" />
