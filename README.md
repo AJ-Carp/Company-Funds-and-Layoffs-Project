@@ -157,7 +157,7 @@ Output of CTE:
 
 Here's a breakdown:
 
-- The inner query groups by company and finds there average percentage_laid_off.
+- The inner query groups by company and finds the average percent 
 - I then put this query inside of a CTE to assign ranks to each company based on layoff percentages, with a higher rank indicating a larger percentage of the company was laid off.
 - If executed without the WHERE statement targeting companies with the name Netlix, the output shows a total of 118 ranks.
 - I then added the WHERE statement and found that Netflix ranked 116 out of 118 ranks, making them one of the companies with the lowest percentage laid off!
