@@ -151,8 +151,9 @@ FROM ranks
 WHERE company = 'Netflix';
 ```
 
-<img width="296" alt="Screenshot 2025-01-08 at 2 08 28 PM" src="https://github.com/user-attachments/assets/d7b333d0-14eb-44c4-b105-f3a8c8775d63" />
+Output:
 
+<img width="296" alt="Screenshot 2025-01-08 at 2 08 28 PM" src="https://github.com/user-attachments/assets/d7b333d0-14eb-44c4-b105-f3a8c8775d63" />
 
 Here's a breakdown:
 - The inner query groups by company and finds there average percentage_laid_off.
