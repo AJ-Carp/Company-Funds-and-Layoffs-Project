@@ -109,8 +109,11 @@ JOIN netflix_total;
 
 <img width="275" alt="Screenshot 2025-01-08 at 1 42 38 PM" src="https://github.com/user-attachments/assets/d6082932-ce68-42cb-a1c8-c08b42606804" />
 
-Here's the breakdown:
-- ghjghj
+```sql
+SELECT COUNT(DISTINCT company) AS media_companies
+FROM layoffs_staging
+WHERE industry = 'media';
+```
 
 This additional query connects everything together regarding the correlation between Netlfix and the media industries high funds in 2022.
 ```sql
