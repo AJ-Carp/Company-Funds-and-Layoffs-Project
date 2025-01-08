@@ -89,13 +89,18 @@ Here's the breakdown:
 
 
 ```sql
--- location where most of media in 2022 made funds
-SELECT location, SUM(funds_raised_millions) AS sum_of_funds
+-- netflix funds percent of total media funds
+SELECT ROUND(SUM(funds_raised_millions)/
+	(SELECT SUM(funds_raised_millions) AS sum_funds
+	FROM layoffs_staging
+	WHERE industry = 'media')*100,1) AS `%_of_total`
 FROM layoffs_staging
-WHERE industry = 'media' AND YEAR(date) = 2022
-GROUP BY location
-ORDER BY 2 DESC
-LIMIT 10;
+WHERE company = 'Netflix';
+
+-- how many companies within media industry
+SELECT COUNT(DISTINCT company) AS comp_count
+FROM layoffs_staging
+WHERE industry = 'media';
 ```
 Output of query formated in Excel:
 
