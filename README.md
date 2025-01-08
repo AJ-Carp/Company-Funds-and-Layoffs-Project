@@ -135,7 +135,7 @@ Output of query formated in Excel:
 <img width="694" alt="Screenshot 2025-01-08 at 3 10 33 PM" src="https://github.com/user-attachments/assets/0a501c86-5018-4103-bad3-00c1e5697eea" />
 
 
-Here's a breakdown:
+Here's the breakdown:
 
 - Media contains 65 companies and altogether raised $504,783.2 in funds.
 - Netflix raised 96.6% of those funds!
@@ -173,7 +173,7 @@ Output of CTE:
 
 <img width="296" alt="Screenshot 2025-01-08 at 2 08 28 PM" src="https://github.com/user-attachments/assets/d7b333d0-14eb-44c4-b105-f3a8c8775d63" />
 
-Here's a breakdown:
+Here's the breakdown:
 
 - The inner query groups by company and finds the average percent of employees that was laid off.
 - I then put this query inside of a CTE to assign ranks to each company based on layoff percentages, with a higher rank indicating a larger percentage of the company was laid off.
