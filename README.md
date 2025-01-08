@@ -85,7 +85,7 @@ Here's the breakdown:
 - I must investigate futher!
 
 
-### 3. Is there a correlation between the leading company and industry for funds raised?
+### 3.  What percent does this leading company make up of it industries overall funds raised?
 
 
 ```sql
