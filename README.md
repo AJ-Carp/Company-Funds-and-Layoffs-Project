@@ -191,6 +191,8 @@ Here's the breakdown:
 - This suggests that if the funds are very high then the compnay probably has low layoffs as well.
 - However, since most companies fall below the average percent laid off line, low layoffs is not a strong indication of high funds.
 
+The additional query below verifies that a lot more companies have below average layoff percentages then above average layoff percentages.
+
 ```sql
 -- stored procedure to differentiate companies with below average layoff percentages and above average layoff percentages
 CREATE TEMPORARY TABLE funds_layoffs_bins
@@ -217,6 +219,9 @@ SELECT layoffs_and_funds, COUNT(layoffs_and_funds) AS category_count
 FROM funds_layoffs_bins
 GROUP BY layoffs_and_funds;
 ```
+Output:
+
+
 
 <img width="201" alt="Screenshot 2025-01-08 at 3 57 57 PM" src="https://github.com/user-attachments/assets/a6c4a56e-0b54-4afc-b78a-6ea8b0b3d0fc" />
 
