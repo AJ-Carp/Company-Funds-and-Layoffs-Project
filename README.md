@@ -107,6 +107,7 @@ FROM media_total
 JOIN netflix_total;
 ```
 Output:
+
 <img width="275" alt="Screenshot 2025-01-08 at 1 42 38 PM" src="https://github.com/user-attachments/assets/d6082932-ce68-42cb-a1c8-c08b42606804" />
 
 ```sql
@@ -115,6 +116,7 @@ FROM layoffs_staging
 WHERE industry = 'media';
 ```
 Output:
+
 ### 4.  Did this leading company have significantly higher or lower amount of layoffs then other companies?
 
 ```sql
