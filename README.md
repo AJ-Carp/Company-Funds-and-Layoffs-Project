@@ -1,9 +1,9 @@
 # Introduction
 As job hunting grows more challenging, I started to consider whether data analysis could enhance my chances of securing a position by examining historical layoff data. Through this project, I aim to uncover key factors contributing to workforce reductions, as well as identify companies and industries that might offer better opportunities.
 
-🚿 Data Cleaning? Check it out here: [cleaning file](cleaning.sql)
+🚿 Data Cleaning? Check it out here: [Cleaning File](cleaning.sql)
 
-🔍 SQL queries? Check them out here: [Project_queries](https://github.com/AJ-Carp/Data-Science-Job-Analysis-Project/tree/main/Project_queries) (change this link)
+🔍 SQL queries? Check them out here: [Project Queries](https://github.com/AJ-Carp/Data-Science-Job-Analysis-Project/tree/main/Project_queries) (change this link)
 
 📊 Tableau Dashboard? Check it out here: [Dashboard] (add link)
 # Questions
