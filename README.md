@@ -248,8 +248,28 @@ Output formatted in Tableau:
 
 <img width="789" alt="Screenshot 2025-01-07 at 12 46 44 PM" src="https://github.com/user-attachments/assets/6255d5b2-d046-4e5f-b92f-1be98ca5a28c" />
 
-<img width="856" alt="Screenshot 2025-01-09 at 11 03 04 AM" src="https://github.com/user-attachments/assets/a2168ad9-9395-4bc3-a207-b662b95ace72" />
+```sql
+-- ranking by layoffs per year and industry
+WITH industry_Year (industry, years, total_laid_off) AS
+(
+	SELECT industry, YEAR(date), SUM(total_laid_off)
+    FROM layoffs_staging
+    GROUP BY industry, YEAR(date)
+),
+industry_Year_rank AS
+(
+	SELECT *, DENSE_RANK() OVER (PARTITION BY years ORDER BY total_laid_off DESC) AS Ranking
+	FROM industry_Year
+	WHERE years IS NOT NULL
+)
+SELECT *
+FROM industry_Year_rank
+WHERE Ranking <= 5;
+```
 
+Output formatted in Tableau:
+
+<img width="856" alt="Screenshot 2025-01-09 at 11 03 04 AM" src="https://github.com/user-attachments/assets/a2168ad9-9395-4bc3-a207-b662b95ace72" />
 
 Here's the breakdown:
 
