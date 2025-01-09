@@ -194,7 +194,7 @@ Here's the breakdown:
 The additional query below verifies that a lot more companies have below average layoff percentages then above average layoff percentages.
 
 ```sql
--- stored procedure to differentiate companies with below average layoff percentages and above average layoff percentages
+-- created temp table to group companies with below average layoff percentages and above average layoff percentages
 CREATE TEMPORARY TABLE funds_layoffs_bins
 	WITH avg_funds_and_layoffs AS 
 	(
