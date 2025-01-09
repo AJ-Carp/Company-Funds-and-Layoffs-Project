@@ -223,7 +223,7 @@ Output:
 
 <img width="201" alt="Screenshot 2025-01-08 at 3 57 57 PM" src="https://github.com/user-attachments/assets/a6c4a56e-0b54-4afc-b78a-6ea8b0b3d0fc" />
 
-I further explored explored this correleations with the first 4 querys in this file [here](https://github.com/AJ-Carp/Data-Science-Job-Analysis-Project/tree/main/Project_queries) (change this link)
+I further explored this correlation with the first 4 queries in this file. Click [here] to check it out!
 
 
 ### 6. What are the top 5 companies and industries with the most layoffs per year?
