@@ -221,8 +221,6 @@ GROUP BY layoffs_and_funds;
 ```
 Output:
 
-
-
 <img width="201" alt="Screenshot 2025-01-08 at 3 57 57 PM" src="https://github.com/user-attachments/assets/a6c4a56e-0b54-4afc-b78a-6ea8b0b3d0fc" />
 
 
