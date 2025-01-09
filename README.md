@@ -227,7 +227,7 @@ Output:
 ### 6. What are the top 5 companies and industries with the most layoffs per year?
 
 ```sql
--- ranking by layoffs per year
+-- ranking by layoffs per year and company
 WITH Company_Year (company, years, total_laid_off) AS
 (
 	SELECT company, YEAR(date), SUM(total_laid_off)
