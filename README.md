@@ -273,9 +273,11 @@ Output formatted in Tableau:
 
 Here's the breakdown:
 
-- The first graph shows the top 5 companies with most layoffs per year.
-- The second graph shows the top 5 industries with most layoffs per year.
--
+- Unlike are prevoius question, we are now looking at total layoffs rather then what percent of the company was laid off.
+- The first graph shows the top 5 companies with most layoffs per year and the second shows the top 5 industries with most layoffs per year.
+- Many big name companies made the top 5 for most layoffs. I expected this, as they have more employees.
+- Notice many of the same industries that had high funds (question 1) also have lots of layoffs.
+- Finally, we see that 2021 had the least amount of layoffs in both company and industry chart.
 
 
 # What I Learned
