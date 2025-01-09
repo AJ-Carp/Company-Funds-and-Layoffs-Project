@@ -273,6 +273,11 @@ Output formatted in Tableau:
 
 Here's the breakdown:
 
+- The first graph shows the top 5 companies with most layoffs per year.
+- The second graph shows the top 5 industries with most layoffs per year.
+-
+
+
 # What I Learned
 
 Throughout this adventure, I've turbocharged my SQL toolkit with some serious firepower:
