@@ -279,15 +279,6 @@ Here's the breakdown:
 - Notice many of the same industries that had high funds (question 1) also have lots of layoffs.
 - Finally, we see that 2021 had the least amount of layoffs in both company and industry chart.
 
-
-# What I Learned
-
-Throughout this adventure, I've turbocharged my SQL toolkit with some serious firepower:
-
-- **🧩 Complex Query Crafting:** Mastered the art of advanced SQL, merging tables like a pro and wielding WITH clauses for ninja-level temp table maneuvers.
-- **📊 Data Aggregation:** Got cozy with GROUP BY and turned aggregate functions like COUNT() and AVG() into my data-summarizing sidekicks.
-- **💡 Analytical Wizardry:** Leveled up my real-world puzzle-solving skills, turning questions into actionable, insightful SQL queries.
-
 # Conclusions
 
 ### Insights
