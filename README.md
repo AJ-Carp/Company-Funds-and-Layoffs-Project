@@ -226,9 +226,27 @@ Output:
 <img width="201" alt="Screenshot 2025-01-08 at 3 57 57 PM" src="https://github.com/user-attachments/assets/a6c4a56e-0b54-4afc-b78a-6ea8b0b3d0fc" />
 
 
-### 6. What are the top 5 companies with the most layoffs per year?
+### 6. What are the top 5 companies and industries with the most layoffs per year?
 
-(could do industries as well)
+```sql
+-- ranking by layoffs per year
+WITH Company_Year (company, years, total_laid_off) AS
+(
+	SELECT company, YEAR(date), SUM(total_laid_off)
+    FROM layoffs_staging
+    GROUP BY company, YEAR(date)
+),
+Company_Year_rank AS
+(
+	SELECT *, DENSE_RANK() OVER (PARTITION BY years ORDER BY total_laid_off DESC) AS Ranking
+	FROM company_Year
+	WHERE years IS NOT NULL
+)
+SELECT *
+FROM Company_Year_rank
+WHERE Ranking <= 5;
+```
+Output formatted in Tableau:
 
 <img width="789" alt="Screenshot 2025-01-07 at 12 46 44 PM" src="https://github.com/user-attachments/assets/6255d5b2-d046-4e5f-b92f-1be98ca5a28c" />
 
