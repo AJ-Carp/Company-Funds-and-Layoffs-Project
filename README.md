@@ -248,6 +248,9 @@ Output formatted in Tableau:
 
 <img width="789" alt="Screenshot 2025-01-07 at 12 46 44 PM" src="https://github.com/user-attachments/assets/6255d5b2-d046-4e5f-b92f-1be98ca5a28c" />
 
+<img width="856" alt="Screenshot 2025-01-09 at 11 03 04 AM" src="https://github.com/user-attachments/assets/a2168ad9-9395-4bc3-a207-b662b95ace72" />
+
+
 Here's the breakdown:
 
 # What I Learned
