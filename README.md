@@ -3,7 +3,7 @@ As job hunting grows more challenging, I started to consider whether data analys
 
 🚿 Data Cleaning? Check it out here: [Cleaning File](cleaning.sql)
 
-🔍 SQL queries? Check them out here: [Project Queries](https://github.com/AJ-Carp/Data-Science-Job-Analysis-Project/tree/main/Project_queries) (change this link)
+🔍 SQL queries? Check them out here: [Project Queries](Project Queries) (change this link)
 
 📊 Tableau Dashboard? Check it out here: [Dashboard] (add link)
 # Questions
