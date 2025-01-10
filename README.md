@@ -17,9 +17,9 @@ As job hunting grows more challenging, I started to consider whether data analys
 
 # Tools I Used
 
-- **MySQL:**
-- **Excel:**
-- **Tableau:**
+- **MySQL:** For cleaning and exploring data set.
+- **Excel:** For formatting outputs of qeuries.
+- **Tableau:** For formatting outputs of qeuries and creating dashboard.
 - **Git & GitHub:** 
 
 # The Analysis
