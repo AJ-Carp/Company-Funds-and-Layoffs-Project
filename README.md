@@ -10,7 +10,7 @@ As job hunting grows more challenging, I started to consider whether data analys
 
 1. Which industry raised the most funds?
 2. Which company raised the most funds and which industry is it part of?
-3. What percent does this leading company make up of it industries overall funds raised?
+3. What percent does this leading company make up of it industries total funds raised?
 4. Did this leading company layoff a smaller percent of there employees compared to other companies?
 5. Throughout the companies, is there a correlation between layoffs and funds raised?
 6. What are the top 5 companies and industries with the most layoffs per year?
@@ -85,7 +85,7 @@ Here's the breakdown:
 - I must investigate futher!
 
 
-### 3.  What percent does this leading company make up of it industries overall funds raised?
+### 3.  What percent does this leading company make up of it industries total funds raised?
 
 
 ```sql
