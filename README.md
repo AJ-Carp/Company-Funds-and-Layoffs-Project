@@ -286,14 +286,11 @@ Here's the breakdown:
 ### Insights
 From the analysis, several general insights emerged:
 
-1. **Industry that raised the most funds**: The highest-paying jobs for data analysts that allow remote work offer a wide range of salaries, the highest at $650,000!
-2. **Company that raised the most funds**: High-paying data analyst jobs require advanced proficiency in SQL, suggesting it’s a critical skill for earning a top salary.
-3. **Percent of total industry funds that leading company makes up**: SQL is also the most demanded skill in the data analyst job market, thus making it essential for job seekers.
-4. **Layoffs for leading company compared to other companies**: Specialized skills, such as SVN and Solidity, are associated with the highest average salaries, indicating a premium on niche expertise.
-5. **Correlation between funds and layoffs**: SQL leads in demand and offers for a high average salary, positioning it as one of the most optimal skills for data analysts to learn to maximize their market value.
-6. 5. **Top 5 companies and industries with most layoffs per year**: SQL leads in demand and offers for a high average salary, positioning it as one of the most optimal skills for data analysts to learn to maximize their market value.
+1. **Industry that raised the most funds**: Media in 2022 alone made up 31.07% of the total funds raised for all 4 years and therefore rasied the most funds. Interestingly, media did not even make the top 5 for any other year.
+2. **Company that raised the most funds**: Netflix takes the lead with more then 3 times the funds the runner up had! Unsuprisingly, Netflix is part of the media industry.
+3. **Percent of total industry funds that leading company makes up**: Netflix only has entries for 2022 and makes up 96.6% of the total media funds. From this we can deduce that Netfix is the sole reason that media only made the top 5 for the year 2022. The craziest part is media contains a total of 65 companies!
+4. **Layoffs for leading company compared to other companies**: I wrote my qeury to rank companies by percentage laid off with higher ranks denoting a lower percent laid off. Netflix ranked 116 out of 118 ranks, making them one of the companies with the lowest percentage laid off!
+5. **Correlation between funds and layoffs**: Most companies have a below average layoff percentage and raised an average amount of funds. Also, the companies who raised very high funds are almost all below average in terms of layoffs. Therefore, low layoffs is not a strong indication of high funds, but high funds likely means low layoffs.
+6. **Top 5 companies and industries with most layoffs per year**: Many big name companies made the top 5 for most layoffs. Also, many of the same industries that had high funds (question 1) also have lots of layoffs. Finally, 2021 had the least amount of layoffs in terms of both companies and industries.
 
-### Closing Thoughts
-
-This project enhanced my SQL skills and provided valuable insights into the data analyst job market. The findings from the analysis serve as a guide to prioritizing skill development and job search efforts. Aspiring data analysts can better position themselves in a competitive job market by focusing on high-demand, high-salary skills. This exploration highlights the importance of continuous learning and adaptation to emerging trends in the field of data analytics.
 
