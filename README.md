@@ -182,7 +182,7 @@ Here's the breakdown:
 
 ### 5. Throughout the companies, is there a correlation between layoffs and funds raised?
 
-<img width="688" alt="Screenshot 2025-01-13 at 1 40 51 PM" src="https://github.com/user-attachments/assets/076bd301-6324-470a-b2f9-bf8ce4b5a67c" />
+<img width="688" alt="Screenshot 2025-01-13 at 3 31 27 PM" src="https://github.com/user-attachments/assets/6544685d-6a8f-443e-850b-5da81a1a3ddb" />
 
 Here's the breakdown: 
 
