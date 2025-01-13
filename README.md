@@ -195,10 +195,10 @@ The additional query below verifies that a lot more companies have below average
 
 ```sql
 -- created temp table to group companies with below average layoff percentages and above average layoff percentages
-CREATE TEMPORARY TABLE funds_layoffs_bins
+CREATE TEMPORARY TABLE layoffs_bins
 	WITH avg_funds_and_layoffs AS 
 	(
-		SELECT company, AVG(funds_raised_millions) AS average_funds, AVG(percentage_laid_off) AS average_laid_off
+		SELECT company, AVG(percentage_laid_off) AS average_laid_off
 		FROM layoffs_staging
 		WHERE funds_raised_millions IS NOT NULL AND percentage_laid_off IS NOT NULL
 		GROUP BY company
@@ -213,10 +213,12 @@ CREATE TEMPORARY TABLE funds_layoffs_bins
 		 END AS layoffs_and_funds
 	FROM avg_funds_and_layoffs
 	ORDER BY layoffs_and_funds;
+    
+DROP TABLE layoffs_bins;
        
 -- counting how many in each category
 SELECT layoffs_and_funds, COUNT(layoffs_and_funds) AS category_count
-FROM funds_layoffs_bins
+FROM layoffs_bins
 GROUP BY layoffs_and_funds;
 ```
 Output:
