@@ -52,7 +52,7 @@ SELECT *
 FROM top_5_per_year
 WHERE row_num <= 5;
 ```
-Output of query formated in Excel:
+Output formated in Excel:
 
 <img width="1277" alt="Screenshot 2025-01-08 at 12 11 17 PM" src="https://github.com/user-attachments/assets/d273fd8c-6c94-4b1e-854b-47f29b3fa9c1" />
 
@@ -72,7 +72,7 @@ GROUP BY company
 ORDER BY 2 DESC
 LIMIT 10;
 ```
-Output of query formated in Tableau:
+Output formated in Tableau:
 
 <img width="875" alt="Screenshot 2025-01-02 at 9 20 59 AM" src="https://github.com/user-attachments/assets/3795f7a0-60e7-47bb-a605-94df87f9e2cc" />
 
@@ -130,7 +130,7 @@ WHERE company = 'Netflix'
 ORDER BY funds_raised_millions DESC;
 ```
 
-Output of query formated in Excel:
+Output formated in Excel:
 
 <img width="694" alt="Screenshot 2025-01-08 at 3 10 33 PM" src="https://github.com/user-attachments/assets/0a501c86-5018-4103-bad3-00c1e5697eea" />
 
