@@ -156,7 +156,7 @@ ORDER BY lay_offs DESC;
 -- inner query inside of CTE to target netflix's ranking
 WITH ranks AS 
 (
-	SELECT company, ROUND(avg_layoff_percentage,2) AS avg_layoff_percentage, DENSE_RANK() OVER(ORDER BY avg_layoff_percentage DESC) AS `rank`
+	SELECT company, ROUND(avg_layoff_percentage,2)*100 AS avg_layoff_percentage, DENSE_RANK() OVER(ORDER BY avg_layoff_percentage DESC) AS `rank`
 	FROM
 		(SELECT company, AVG(percentage_laid_off) AS avg_layoff_percentage
 		FROM layoffs_staging
