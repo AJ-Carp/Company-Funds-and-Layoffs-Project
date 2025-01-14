@@ -191,39 +191,18 @@ Here's the breakdown:
 - This suggests that if the funds are very high then the company probably has low layoffs as well.
 - However, since most companies fall below the average percent laid off line and directly on the average funds line, low layoffs is not a strong indication of high funds.
 
-The additional query below verifies that a lot more companies have below average layoff percentages then above average layoff percentages.
+The Histogram below may help to better understand the correlation between layoffs and funds raised.
 
-```sql
--- created temp table to group companies with below average layoff percentages and above average layoff percentages
-CREATE TEMPORARY TABLE layoffs_bins
-	WITH avg_funds_and_layoffs AS 
-	(
-		SELECT company, AVG(percentage_laid_off) AS average_laid_off
-		FROM layoffs_staging
-		WHERE funds_raised_millions IS NOT NULL AND percentage_laid_off IS NOT NULL
-		GROUP BY company
-	)
-			SELECT company,
-		 CASE 
-             WHEN average_laid_off > (SELECT AVG(percentage_laid_off) AS avg_funds
-			 FROM layoffs_staging) THEN 'high layoffs'
-			 
-			 WHEN average_laid_off < (SELECT AVG(percentage_laid_off) AS avg_funds
-			 FROM layoffs_staging) THEN 'low layoffs'
-		 END AS layoffs_and_funds
-	FROM avg_funds_and_layoffs
-	ORDER BY layoffs_and_funds;
-    
-DROP TABLE layoffs_bins;
-       
--- counting how many in each category
-SELECT layoffs_and_funds, COUNT(layoffs_and_funds) AS category_count
-FROM layoffs_bins
-GROUP BY layoffs_and_funds;
-```
-Output:
+<img width="1193" alt="Screenshot 2025-01-14 at 10 52 51 AM" src="https://github.com/user-attachments/assets/f9349c18-414d-40b6-afe4-97f29ace9753" />
 
-<img width="201" alt="Screenshot 2025-01-08 at 3 57 57 PM" src="https://github.com/user-attachments/assets/a6c4a56e-0b54-4afc-b78a-6ea8b0b3d0fc" />
+Breakdown of histogram:
+
+-
+
+
+
+
+
 
 I further explored this correlation with the first 4 queries in this file. Click [here](https://github.com/AJ-Carp/Company-Funds-and-Layoffs-Project/blob/main/Project%20Queries/Additional_Info.sql) to check it out!
 
