@@ -197,15 +197,11 @@ The Histogram below may help to better understand the correlation between layoff
 
 Breakdown of histogram:
 
--
-
-
-
-
-
+- The histogram groups data into bars based on layoff percentage with each bar incrementing by 10%.
+- The first bar contains rows of data with 0% - 10% then the next 10% - 20%, etc.
+- The darker shades of blue indicate higher funds were raised by that group.
 
 I further explored this correlation with the first 4 queries in this file. Click [here](https://github.com/AJ-Carp/Company-Funds-and-Layoffs-Project/blob/main/Project%20Queries/Additional_Info.sql) to check it out!
-
 
 ### 6. What are the top 5 companies and industries with the most layoffs per year?
 
