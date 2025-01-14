@@ -5,7 +5,8 @@ As job hunting grows more challenging, I started to consider whether data analys
 
 🔍 SQL queries? Check them out here: [Project Queries](https://github.com/AJ-Carp/Company-Funds-and-Layoffs-Project/tree/main/Project%20Queries)
 
-📊 Tableau Dashboard? Check it out here: [Dashboard] (add link)
+📊 Tableau Dashboards? Check them out here: [Dashboard] (add link)
+
 # Questions
 
 1. Which industry raised the most funds?
