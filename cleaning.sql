@@ -19,6 +19,9 @@ FROM layoffs;
 SELECT *
 FROM layoffs_staging;
 
+SELECT *
+FROM layoffs;
+
 
 -- removing dupes
 DELETE FROM layoffs_staging
@@ -127,6 +130,10 @@ ON t1.company = t2.company
 WHERE t1.stage IS NULL 
 AND t2.stage IS NOT NULL;
 
+UPDATE layoffs_staging
+SET industry = "Other"
+WHERE industry IS NULL;
+
 
 -- removing uneeded data
 DELETE FROM layoffs_staging 
@@ -135,6 +142,9 @@ WHERE total_laid_off IS NULL AND percentage_laid_off IS NULL;
 
 ALTER TABLE layoffs_staging
 DROP COLUMN row_id;
+
+
+
 
 
 
