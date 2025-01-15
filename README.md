@@ -202,7 +202,7 @@ Breakdown of histogram:
 - The first bar contains rows of data with 0% - 10% then the next 10% - 20%, etc.
 - The darker shades of blue indicate a higher median fund was raised by that group.
 
-To see both visuals from question 5 interact with each other, click [here]([https://github.com/AJ-Carp/Company-Funds-and-Layoffs-Project/blob/main/Project%20Queries/Additional_Info.sql](https://public.tableau.com/app/profile/anthony.carpinello/viz/FundsandLayoffsProject/Story1))!
+To see both visuals from question 5 interact with each other, click [here](https://public.tableau.com/app/profile/anthony.carpinello/viz/FundsandLayoffsProject/Story1)!
 
 ### 6. What are the top 5 companies and industries with the most layoffs per year?
 
