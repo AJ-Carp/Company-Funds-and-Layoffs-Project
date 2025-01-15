@@ -7,7 +7,7 @@ GROUP BY company
 ORDER BY AVG(funds_raised_millions) DESC
 LIMIT 10;
     
--- does each of these top ten companies have high or low layoffs
+-- are each of these top ten companies above or below the average layoff percentage?
 WITH avg_funds_and_layoffs AS 
 (
 	SELECT company, AVG(percentage_laid_off) AS average_laid_off
@@ -36,7 +36,7 @@ GROUP BY company
 ORDER BY AVG(funds_raised_millions)
 LIMIT 10;
     
--- does each of these top ten companies have high or low layoffs 
+-- are each of these top ten companies above or below the average layoff percentage?
 WITH avg_funds_and_layoffs AS 
 (
 	SELECT company, AVG(percentage_laid_off) AS average_laid_off
