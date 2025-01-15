@@ -194,13 +194,13 @@ Here's the breakdown:
 
 The Histogram below may help to better understand the correlation between layoffs and funds raised.
 
-<img width="1193" alt="Screenshot 2025-01-14 at 10 52 51 AM" src="https://github.com/user-attachments/assets/f9349c18-414d-40b6-afe4-97f29ace9753" />
+<img width="1049" alt="Screenshot 2025-01-15 at 11 40 11 AM" src="https://github.com/user-attachments/assets/e9a04c7b-341b-4ce6-9aec-8771c97fb096" />
 
 Breakdown of histogram:
 
 - The histogram groups data into bars based on layoff percentage with each bar incrementing by 10%.
 - The first bar contains rows of data with 0% - 10% then the next 10% - 20%, etc.
-- The darker shades of blue indicate higher funds were raised by that group.
+- The darker shades of blue indicate a higher median fund was raised by that group.
 
 I further explored this correlation with the first 4 queries in this file. Click [here](https://github.com/AJ-Carp/Company-Funds-and-Layoffs-Project/blob/main/Project%20Queries/Additional_Info.sql) to check it out!
 
