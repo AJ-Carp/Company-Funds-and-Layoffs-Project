@@ -53,14 +53,14 @@ SELECT *
 FROM top_5_per_year
 WHERE row_num <= 5;
 ```
-Output formated in Excel:
+Output formatted in Excel:
 
 <img width="1277" alt="Screenshot 2025-01-08 at 12 11 17 PM" src="https://github.com/user-attachments/assets/d273fd8c-6c94-4b1e-854b-47f29b3fa9c1" />
 
 
 Here's the breakdown:
 - In our first 2 columns, the top 5 industries leading in funds for each year are shown.
-- In the 3rd column the sum of funds for each undustry per year is shown. Then in the 4th column the sum of funds for the whole year is shown. (for ALL industries)
+- In the 3rd column the sum of funds for each industry per year is shown. Then in the 4th column the sum of funds for the whole year is shown. (for ALL industries)
 - The 5th column shows what percent of funds each industry makes up for each year.
 - Finally, the 6th column shows the total sum of all funds for all 4 years. Then in the last column we see that media in 2022 alone makes up 31% of the whole total, clearly indicating that media is our winner.
   
@@ -73,7 +73,7 @@ GROUP BY company
 ORDER BY 2 DESC
 LIMIT 10;
 ```
-Output formated in Tableau:
+Output formatted in Tableau:
 
 <img width="875" alt="Screenshot 2025-01-02 at 9 20 59 AM" src="https://github.com/user-attachments/assets/3795f7a0-60e7-47bb-a605-94df87f9e2cc" />
 
@@ -81,12 +81,12 @@ Output formated in Tableau:
 Here's the breakdown:
 - The companies are grouped together, showing the sum of all funds for each company.
 - The legend on the right tells us the industry each company is part of.
-- Netflix takes the lead with more then 3 times the funds the runner up had!
+- Netflix takes the lead with more than 3 times the funds the runner up had!
 - Unsurprisingly, Netflix is considered part of the media industry.
-- I must investigate futher!
+- I must investigate further!
 
 
-### 3.  What percent does this leading company make up of it industries total funds raised?
+### 3.  What percent does this leading company make up of its industries total funds raised?
 
 
 ```sql
@@ -131,7 +131,7 @@ WHERE company = 'Netflix'
 ORDER BY funds_raised_millions DESC;
 ```
 
-Output formated in Excel:
+Output formatted in Excel:
 
 <img width="694" alt="Screenshot 2025-01-08 at 3 10 33 PM" src="https://github.com/user-attachments/assets/0a501c86-5018-4103-bad3-00c1e5697eea" />
 
@@ -141,10 +141,10 @@ Here's the breakdown:
 - Media contains 65 companies and altogether raised $504,783.2 in funds.
 - With a total of $487,600, Netflix raised 96.6% of those funds!
 - Recall the output of question 1 where we found that media only made the top 5 for funds in 2022.
-- Netflix only has entries for 2022 and makes up 96.6% of the total media funds. From this we can deduce that Netfix is the sole reason that media only made the
+- Netflix only has entries for 2022 and makes up 96.6% of the total media funds. From this we can deduce that Netflix is the sole reason that media only made the
 top 5 for the year 2022.
 
-### 4. Did this leading company layoff a smaller percent of there employees compared to other companies?
+### 4. Did this leading company layoff a smaller percent of their employees compared to other companies?
 
 ```sql
 -- inner query showing all ranks
@@ -154,7 +154,7 @@ WHERE percentage_laid_off IS NOT NULL
 GROUP BY company
 ORDER BY lay_offs DESC;
 
--- inner query inside of CTE to target netflix's ranking
+-- inner query inside of CTE to target Netflix’s ranking
 WITH ranks AS 
 (
 	SELECT company, ROUND(avg_layoff_percentage,2)*100 AS avg_layoff_percentage, DENSE_RANK() OVER(ORDER BY avg_layoff_percentage DESC) AS `rank`
@@ -178,7 +178,7 @@ Here's the breakdown:
 
 - The inner query groups by company and finds the average percent of employees that was laid off.
 - I then put this query inside of a CTE to assign ranks to each company based on layoff percentages, with a higher rank indicating a larger percentage of the company was laid off.
-- If executed without the WHERE statement to target Netlix, the output shows a total of 118 ranks.
+- If executed without the WHERE statement to target Netflix, the output shows a total of 118 ranks.
 - With the WHERE statement, I found that Netflix ranked 116 out of 118 ranks, making them one of the companies with the lowest percentage laid off!
 
 ### 5. Throughout the companies, is there a correlation between layoffs and funds raised?
@@ -253,22 +253,22 @@ Output formatted in Tableau:
 
 Here's the breakdown:
 
-- Unlike are prevoius question, we are now looking at total layoffs rather then what percent of the company was laid off.
+- Unlike are previous question, we are now looking at total layoffs rather than what percent of the company was laid off.
 - The first graph shows the top 5 companies with most layoffs per year and the second shows the top 5 industries with most layoffs per year.
-- Many big name companies made the top 5 for most layoffs. I expected this, as they have more employees.
+- Many big-name companies made the top 5 for most layoffs. I expected this, as they have more employees.
 - Notice many of the same industries that had high funds (question 1) also have lots of layoffs.
-- Finally, we see that 2021 had the least amount of layoffs in both company and industry chart.
+- Finally, we see that 2021 had the least number of layoffs in both company and industry chart.
 
 # Conclusions
 
 ### Insights
 From the analysis, several general insights emerged:
 
-1. **Industry that raised the most funds**: Media in 2022 alone made up 31.07% of the total funds raised for all 4 years and therefore rasied the most funds. Interestingly, media did not even make the top 5 for any other year.
-2. **Company that raised the most funds**: Netflix takes the lead with more then 3 times the funds the runner up had! Unsuprisingly, Netflix is part of the media industry.
-3. **Percent of total industry funds that leading company makes up**: Netflix only has entries for 2022 and makes up 96.6% of the total media funds. From this we can deduce that Netfix is the sole reason that media only made the top 5 for the year 2022. The craziest part is media contains a total of 65 companies!
-4. **Layoffs for leading company compared to other companies**: I wrote my qeury to rank companies by percentage laid off with higher ranks denoting a lower percent laid off. Netflix ranked 116 out of 118 ranks, making them one of the companies with the lowest percentage laid off!
-5. **Correlation between funds and layoffs**: Most companies have a below average layoff percentage and raised an average amount of funds. Also, the companies who raised very high funds are almost all below average in terms of layoffs. Therefore, low layoffs is not a strong indication of high funds, but high funds likely means low layoffs.
-6. **Top 5 companies and industries with most layoffs per year**: Many big name companies made the top 5 for most layoffs. Also, many of the same industries that had high funds (question 1) also have lots of layoffs. Finally, 2021 had the least amount of layoffs in terms of both companies and industries.
+1. **Industry that raised the most funds**: Media in 2022 alone made up 31.07% of the total funds raised for all 4 years and therefore raised the most funds. Interestingly, media did not even make the top 5 for any other year.
+2. **Company that raised the most funds**: Netflix takes the lead with more than 3 times the funds the runner up had! Unsurprisingly, Netflix is part of the media industry.
+3. **Percent of total industry funds that leading company makes up**: Netflix only has entries for 2022 and makes up 96.6% of the total media funds. From this we can deduce that Netflix is the sole reason that media only made the top 5 for the year 2022. The craziest part is media contains a total of 65 companies!
+4. **Layoffs for leading company compared to other companies**: I wrote my query to rank companies by percentage laid off with higher ranks denoting a lower percent laid off. Netflix ranked 116 out of 118 ranks, making them one of the companies with the lowest percentage laid off!
+5. **Correlation between funds and layoffs**: Most companies have a below average layoff percentage and raised an average amount of funds. Also, the companies who raised very high funds are almost all below average in terms of layoffs. Therefore, low layoffs are not a strong indication of high funds, but high funds likely mean low layoffs.
+6. **Top 5 companies and industries with most layoffs per year**: Many big-name companies made the top 5 for most layoffs. Also, many of the same industries that had high funds (question 1) also have lots of layoffs. Finally, 2021 had the least number of layoffs in terms of both companies and industries.
 
 
